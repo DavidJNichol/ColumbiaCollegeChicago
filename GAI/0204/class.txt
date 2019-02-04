@@ -8,3 +8,10 @@ Intelligence
 Agente that is motivated to leverage knowledge of an environment towards a goal
 Ability to modify approach based on new or changing information.
 
+--//--
+
+Mental Model =  Paradigm
+
+Classification
+Clasical
+Specify Knowledge
