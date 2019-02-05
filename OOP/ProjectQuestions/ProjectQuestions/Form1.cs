@@ -25,63 +25,79 @@ namespace ProjectQuestions
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int result = 0;
+            int result1 = 0;
+            int result2 = 0;
+            int result3 = 0;
+            int result4 = 0;
+            int result5 = 0;
+            int result6 = 0;
+            int result7 = 0;
+            int result8 = 0;
+            int result9 = 0;
+            int final = 0;
 
             for (int i = 0; i < checkedListBox1.CheckedIndices.Count; i++)
             {
-                result += checkedListBox1.CheckedIndices[i];
-                result += 1;
+                result1 += checkedListBox1.CheckedIndices[i];
+                result1 += 1;
             }
 
             for (int i = 0; i < checkedListBox2.CheckedIndices.Count; i++)
             {
-                result += checkedListBox2.CheckedIndices[i];
-                result += 1;
+                result2 += checkedListBox2.CheckedIndices[i];
+                result2 += 1;
             }
 
             for (int i = 0; i < checkedListBox3.CheckedIndices.Count; i++)
             {
-                result += checkedListBox3.CheckedIndices[i];
-                result += 1;
+                result3 += checkedListBox3.CheckedIndices[i];
+                result3 += 1;
             }
 
             for (int i = 0; i < checkedListBox4.CheckedIndices.Count; i++)
             {
-                result += checkedListBox4.CheckedIndices[i];
-                result += 1;
+                result4 += checkedListBox4.CheckedIndices[i];
+                result4 += 1;
             }
 
             for (int i = 0; i < checkedListBox5.CheckedIndices.Count; i++)
             {
-                result += checkedListBox5.CheckedIndices[i];
-                result += 1;
+                result5 += checkedListBox5.CheckedIndices[i];
+                result5 += 1;
             }
 
             for (int i = 0; i < checkedListBox6.CheckedIndices.Count; i++)
             {
-                result += checkedListBox6.CheckedIndices[i];
-                result += 1;
+                result6 += checkedListBox6.CheckedIndices[i];
+                result6 += 1;
             }
 
             for (int i = 0; i < checkedListBox7.CheckedIndices.Count; i++)
             {
-                result += checkedListBox7.CheckedIndices[i];
-                result += 1;
+                result7 += checkedListBox7.CheckedIndices[i];
+                result7 += 1;
             }
 
             for (int i = 0; i < checkedListBox8.CheckedIndices.Count; i++)
             {
-                result += checkedListBox8.CheckedIndices[i];
-                result += 1;
+                result8 += checkedListBox8.CheckedIndices[i];
+                result8 += 1;
             }
 
             for (int i = 0; i < checkedListBox9.CheckedIndices.Count; i++)
             {
-                result += checkedListBox9.CheckedIndices[i];
-                result += 1;
+                result9 += checkedListBox9.CheckedIndices[i];
+                result9 += 1;
             }
 
-            textBox1.Text = result.ToString();
+            final = result1 + result2 + result3 + result4 + result5 + result6 + result7 + result8 + result9;
+
+            textBox1.Text = final.ToString();
+        }
+
+        private void checkedListBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
