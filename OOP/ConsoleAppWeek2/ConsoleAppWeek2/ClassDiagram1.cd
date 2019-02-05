@@ -7,5 +7,19 @@
       <FileName>Chair.cs</FileName>
     </TypeIdentifier>
   </Class>
+  <Class Name="ConsoleAppWeek2.SimpleQuestion">
+    <Position X="7.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAgAAAAA=</HashCode>
+      <FileName>SimpleQuestion.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConsoleAppWeek2.TopicQuestionnaire">
+    <Position X="5.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAACAA=</HashCode>
+      <FileName>TopicQuestionnaire.cs</FileName>
+    </TypeIdentifier>
+  </Class>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>
