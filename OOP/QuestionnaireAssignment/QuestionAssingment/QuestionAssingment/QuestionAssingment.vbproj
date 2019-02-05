@@ -73,6 +73,7 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MyListBoxItem.vb" />
     <Compile Include="Result.vb" />
     <Compile Include="User.vb" />
     <Compile Include="Form1.vb">

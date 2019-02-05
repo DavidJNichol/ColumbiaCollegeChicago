@@ -32,16 +32,8 @@ Partial Class Form1
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.CheckedListBoxQuestion1 = New System.Windows.Forms.CheckedListBox()
-        Me.CheckedListBoxQuestion2 = New System.Windows.Forms.CheckedListBox()
-        Me.CheckedListBoxQuestion3 = New System.Windows.Forms.CheckedListBox()
-        Me.CheckedListBoxQuestion4 = New System.Windows.Forms.CheckedListBox()
-        Me.CheckedListBoxQuestion5 = New System.Windows.Forms.CheckedListBox()
-        Me.CheckedListBoxQuestion6 = New System.Windows.Forms.CheckedListBox()
-        Me.CheckedListBoxQuestion7 = New System.Windows.Forms.CheckedListBox()
-        Me.CheckedListBoxQuestion8 = New System.Windows.Forms.CheckedListBox()
-        Me.CheckedListBoxQuestion9 = New System.Windows.Forms.CheckedListBox()
-        Me.Label10 = New System.Windows.Forms.Label()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label1
@@ -135,117 +127,29 @@ Partial Class Form1
         Me.CheckedListBoxQuestion1.Size = New System.Drawing.Size(138, 79)
         Me.CheckedListBoxQuestion1.TabIndex = 9
         '
-        'CheckedListBoxQuestion2
-        '
-        Me.CheckedListBoxQuestion2.CheckOnClick = True
-        Me.CheckedListBoxQuestion2.FormattingEnabled = True
-        Me.CheckedListBoxQuestion2.Items.AddRange(New Object() {"Very Inaccurate", "Moderately Inaccurate", "Nor Inaccurate", "Moderately Accurate", "Very Accurate"})
-        Me.CheckedListBoxQuestion2.Location = New System.Drawing.Point(233, 103)
-        Me.CheckedListBoxQuestion2.Name = "CheckedListBoxQuestion2"
-        Me.CheckedListBoxQuestion2.Size = New System.Drawing.Size(138, 79)
-        Me.CheckedListBoxQuestion2.TabIndex = 10
-        '
-        'CheckedListBoxQuestion3
-        '
-        Me.CheckedListBoxQuestion3.CheckOnClick = True
-        Me.CheckedListBoxQuestion3.FormattingEnabled = True
-        Me.CheckedListBoxQuestion3.Items.AddRange(New Object() {"Very Inaccurate", "Moderately Inaccurate", "Nor Inaccurate", "Moderately Accurate", "Very Accurate"})
-        Me.CheckedListBoxQuestion3.Location = New System.Drawing.Point(431, 103)
-        Me.CheckedListBoxQuestion3.Name = "CheckedListBoxQuestion3"
-        Me.CheckedListBoxQuestion3.Size = New System.Drawing.Size(138, 79)
-        Me.CheckedListBoxQuestion3.TabIndex = 11
-        '
-        'CheckedListBoxQuestion4
-        '
-        Me.CheckedListBoxQuestion4.CheckOnClick = True
-        Me.CheckedListBoxQuestion4.FormattingEnabled = True
-        Me.CheckedListBoxQuestion4.Items.AddRange(New Object() {"Very Inaccurate", "Moderately Inaccurate", "Nor Inaccurate", "Moderately Accurate", "Very Accurate"})
-        Me.CheckedListBoxQuestion4.Location = New System.Drawing.Point(612, 103)
-        Me.CheckedListBoxQuestion4.Name = "CheckedListBoxQuestion4"
-        Me.CheckedListBoxQuestion4.Size = New System.Drawing.Size(138, 79)
-        Me.CheckedListBoxQuestion4.TabIndex = 12
-        '
-        'CheckedListBoxQuestion5
-        '
-        Me.CheckedListBoxQuestion5.CheckOnClick = True
-        Me.CheckedListBoxQuestion5.FormattingEnabled = True
-        Me.CheckedListBoxQuestion5.Items.AddRange(New Object() {"Very Inaccurate", "Moderately Inaccurate", "Nor Inaccurate", "Moderately Accurate", "Very Accurate"})
-        Me.CheckedListBoxQuestion5.Location = New System.Drawing.Point(814, 103)
-        Me.CheckedListBoxQuestion5.Name = "CheckedListBoxQuestion5"
-        Me.CheckedListBoxQuestion5.Size = New System.Drawing.Size(138, 79)
-        Me.CheckedListBoxQuestion5.TabIndex = 13
-        '
-        'CheckedListBoxQuestion6
-        '
-        Me.CheckedListBoxQuestion6.CheckOnClick = True
-        Me.CheckedListBoxQuestion6.FormattingEnabled = True
-        Me.CheckedListBoxQuestion6.Items.AddRange(New Object() {"Very Inaccurate", "Moderately Inaccurate", "Nor Inaccurate", "Moderately Accurate", "Very Accurate"})
-        Me.CheckedListBoxQuestion6.Location = New System.Drawing.Point(50, 295)
-        Me.CheckedListBoxQuestion6.Name = "CheckedListBoxQuestion6"
-        Me.CheckedListBoxQuestion6.Size = New System.Drawing.Size(138, 79)
-        Me.CheckedListBoxQuestion6.TabIndex = 14
-        '
-        'CheckedListBoxQuestion7
-        '
-        Me.CheckedListBoxQuestion7.CheckOnClick = True
-        Me.CheckedListBoxQuestion7.FormattingEnabled = True
-        Me.CheckedListBoxQuestion7.Items.AddRange(New Object() {"Very Inaccurate", "Moderately Inaccurate", "Nor Inaccurate", "Moderately Accurate", "Very Accurate"})
-        Me.CheckedListBoxQuestion7.Location = New System.Drawing.Point(233, 295)
-        Me.CheckedListBoxQuestion7.Name = "CheckedListBoxQuestion7"
-        Me.CheckedListBoxQuestion7.Size = New System.Drawing.Size(138, 79)
-        Me.CheckedListBoxQuestion7.TabIndex = 15
-        '
-        'CheckedListBoxQuestion8
-        '
-        Me.CheckedListBoxQuestion8.CheckOnClick = True
-        Me.CheckedListBoxQuestion8.FormattingEnabled = True
-        Me.CheckedListBoxQuestion8.Items.AddRange(New Object() {"Very Inaccurate", "Moderately Inaccurate", "Nor Inaccurate", "Moderately Accurate", "Very Accurate"})
-        Me.CheckedListBoxQuestion8.Location = New System.Drawing.Point(431, 295)
-        Me.CheckedListBoxQuestion8.Name = "CheckedListBoxQuestion8"
-        Me.CheckedListBoxQuestion8.Size = New System.Drawing.Size(138, 79)
-        Me.CheckedListBoxQuestion8.TabIndex = 16
-        '
-        'CheckedListBoxQuestion9
-        '
-        Me.CheckedListBoxQuestion9.CheckOnClick = True
-        Me.CheckedListBoxQuestion9.FormattingEnabled = True
-        Me.CheckedListBoxQuestion9.Items.AddRange(New Object() {"Very Inaccurate", "Moderately Inaccurate", "Nor Inaccurate", "Moderately Accurate", "Very Accurate"})
-        Me.CheckedListBoxQuestion9.Location = New System.Drawing.Point(612, 295)
-        Me.CheckedListBoxQuestion9.Name = "CheckedListBoxQuestion9"
-        Me.CheckedListBoxQuestion9.Size = New System.Drawing.Size(138, 79)
-        Me.CheckedListBoxQuestion9.TabIndex = 17
-        '
-        'Label10
-        '
-        Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(47, 491)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(37, 13)
-        Me.Label10.TabIndex = 18
-        Me.Label10.Text = "Result"
-        '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(90, 488)
+        Me.TextBox1.Location = New System.Drawing.Point(156, 484)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(100, 20)
         Me.TextBox1.TabIndex = 19
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(50, 481)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.TabIndex = 20
+        Me.Button1.Text = "Result"
+        Me.Button1.UseVisualStyleBackColor = True
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1046, 617)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.TextBox1)
-        Me.Controls.Add(Me.Label10)
-        Me.Controls.Add(Me.CheckedListBoxQuestion9)
-        Me.Controls.Add(Me.CheckedListBoxQuestion8)
-        Me.Controls.Add(Me.CheckedListBoxQuestion7)
-        Me.Controls.Add(Me.CheckedListBoxQuestion6)
-        Me.Controls.Add(Me.CheckedListBoxQuestion5)
-        Me.Controls.Add(Me.CheckedListBoxQuestion4)
-        Me.Controls.Add(Me.CheckedListBoxQuestion3)
-        Me.Controls.Add(Me.CheckedListBoxQuestion2)
         Me.Controls.Add(Me.CheckedListBoxQuestion1)
         Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.Label8)
@@ -273,14 +177,6 @@ Partial Class Form1
     Friend WithEvents Label8 As Label
     Friend WithEvents Label9 As Label
     Friend WithEvents CheckedListBoxQuestion1 As CheckedListBox
-    Friend WithEvents CheckedListBoxQuestion2 As CheckedListBox
-    Friend WithEvents CheckedListBoxQuestion3 As CheckedListBox
-    Friend WithEvents CheckedListBoxQuestion4 As CheckedListBox
-    Friend WithEvents CheckedListBoxQuestion5 As CheckedListBox
-    Friend WithEvents CheckedListBoxQuestion6 As CheckedListBox
-    Friend WithEvents CheckedListBoxQuestion7 As CheckedListBox
-    Friend WithEvents CheckedListBoxQuestion8 As CheckedListBox
-    Friend WithEvents CheckedListBoxQuestion9 As CheckedListBox
-    Friend WithEvents Label10 As Label
     Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents Button1 As Button
 End Class
