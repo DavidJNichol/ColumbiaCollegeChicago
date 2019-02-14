@@ -1,0 +1,12 @@
+\\iam.local\isilon\userNonIAM\Angelo.deMello\CCC\OOP\QuestionnaireAssignment\QuestionAssingment\QuestionAssingment\bin\Debug\QuestionAssingment.exe.config
+\\iam.local\isilon\userNonIAM\Angelo.deMello\CCC\OOP\QuestionnaireAssignment\QuestionAssingment\QuestionAssingment\bin\Debug\QuestionAssingment.exe
+\\iam.local\isilon\userNonIAM\Angelo.deMello\CCC\OOP\QuestionnaireAssignment\QuestionAssingment\QuestionAssingment\bin\Debug\QuestionAssingment.pdb
+\\iam.local\isilon\userNonIAM\Angelo.deMello\CCC\OOP\QuestionnaireAssignment\QuestionAssingment\QuestionAssingment\bin\Debug\QuestionAssingment.xml
+\\iam.local\isilon\userNonIAM\Angelo.deMello\CCC\OOP\QuestionnaireAssignment\QuestionAssingment\QuestionAssingment\obj\Debug\QuestionAssingment.vbprojAssemblyReference.cache
+\\iam.local\isilon\userNonIAM\Angelo.deMello\CCC\OOP\QuestionnaireAssignment\QuestionAssingment\QuestionAssingment\obj\Debug\QuestionAssingment.Form1.resources
+\\iam.local\isilon\userNonIAM\Angelo.deMello\CCC\OOP\QuestionnaireAssignment\QuestionAssingment\QuestionAssingment\obj\Debug\QuestionAssingment.Resources.resources
+\\iam.local\isilon\userNonIAM\Angelo.deMello\CCC\OOP\QuestionnaireAssignment\QuestionAssingment\QuestionAssingment\obj\Debug\QuestionAssingment.vbproj.GenerateResource.cache
+\\iam.local\isilon\userNonIAM\Angelo.deMello\CCC\OOP\QuestionnaireAssignment\QuestionAssingment\QuestionAssingment\obj\Debug\QuestionAssingment.vbproj.CoreCompileInputs.cache
+\\iam.local\isilon\userNonIAM\Angelo.deMello\CCC\OOP\QuestionnaireAssignment\QuestionAssingment\QuestionAssingment\obj\Debug\QuestionAssingment.exe
+\\iam.local\isilon\userNonIAM\Angelo.deMello\CCC\OOP\QuestionnaireAssignment\QuestionAssingment\QuestionAssingment\obj\Debug\QuestionAssingment.xml
+\\iam.local\isilon\userNonIAM\Angelo.deMello\CCC\OOP\QuestionnaireAssignment\QuestionAssingment\QuestionAssingment\obj\Debug\QuestionAssingment.pdb

@@ -1,0 +1,9 @@
+\\iam.local\isilon\userNonIAM\Angelo.deMello\CCC\OOP\ProjectQuestions\ProjectQuestions\bin\Debug\ProjectQuestions.exe.config
+\\iam.local\isilon\userNonIAM\Angelo.deMello\CCC\OOP\ProjectQuestions\ProjectQuestions\bin\Debug\ProjectQuestions.exe
+\\iam.local\isilon\userNonIAM\Angelo.deMello\CCC\OOP\ProjectQuestions\ProjectQuestions\bin\Debug\ProjectQuestions.pdb
+\\iam.local\isilon\userNonIAM\Angelo.deMello\CCC\OOP\ProjectQuestions\ProjectQuestions\obj\Debug\ProjectQuestions.csprojAssemblyReference.cache
+\\iam.local\isilon\userNonIAM\Angelo.deMello\CCC\OOP\ProjectQuestions\ProjectQuestions\obj\Debug\ProjectQuestions.Form1.resources
+\\iam.local\isilon\userNonIAM\Angelo.deMello\CCC\OOP\ProjectQuestions\ProjectQuestions\obj\Debug\ProjectQuestions.csproj.GenerateResource.cache
+\\iam.local\isilon\userNonIAM\Angelo.deMello\CCC\OOP\ProjectQuestions\ProjectQuestions\obj\Debug\ProjectQuestions.csproj.CoreCompileInputs.cache
+\\iam.local\isilon\userNonIAM\Angelo.deMello\CCC\OOP\ProjectQuestions\ProjectQuestions\obj\Debug\ProjectQuestions.exe
+\\iam.local\isilon\userNonIAM\Angelo.deMello\CCC\OOP\ProjectQuestions\ProjectQuestions\obj\Debug\ProjectQuestions.pdb

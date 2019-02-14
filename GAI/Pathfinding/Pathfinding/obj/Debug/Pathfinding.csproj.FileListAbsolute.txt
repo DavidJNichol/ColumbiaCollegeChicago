@@ -1,0 +1,7 @@
+\\iam.local\isilon\userNonIAM\Angelo.deMello\CCC\GAI\Pathfinding\Pathfinding\bin\Debug\Pathfinding.exe.config
+\\iam.local\isilon\userNonIAM\Angelo.deMello\CCC\GAI\Pathfinding\Pathfinding\bin\Debug\Pathfinding.exe
+\\iam.local\isilon\userNonIAM\Angelo.deMello\CCC\GAI\Pathfinding\Pathfinding\bin\Debug\Pathfinding.pdb
+\\iam.local\isilon\userNonIAM\Angelo.deMello\CCC\GAI\Pathfinding\Pathfinding\obj\Debug\Pathfinding.csprojAssemblyReference.cache
+\\iam.local\isilon\userNonIAM\Angelo.deMello\CCC\GAI\Pathfinding\Pathfinding\obj\Debug\Pathfinding.csproj.CoreCompileInputs.cache
+\\iam.local\isilon\userNonIAM\Angelo.deMello\CCC\GAI\Pathfinding\Pathfinding\obj\Debug\Pathfinding.exe
+\\iam.local\isilon\userNonIAM\Angelo.deMello\CCC\GAI\Pathfinding\Pathfinding\obj\Debug\Pathfinding.pdb

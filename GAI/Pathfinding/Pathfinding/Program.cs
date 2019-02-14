@@ -15,7 +15,7 @@ namespace Pathfinding
             var target = new Location { X = 10, Y = 10 };
             var openList = new List<Location>();
             var closedList = new List<Location>();
-            int SLEEP_TIME = 200;
+            int SLEEP_TIME = 100;
             int g = 0;
 
             string[] map = new string[]{"+----------+",

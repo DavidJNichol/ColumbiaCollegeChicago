@@ -1,0 +1,7 @@
+\\iam.local\isilon\userNonIAM\Angelo.deMello\CCC\OOP\ConsoleAppWeek2\ConsoleAppWeek2\bin\Debug\ConsoleAppWeek2.exe.config
+\\iam.local\isilon\userNonIAM\Angelo.deMello\CCC\OOP\ConsoleAppWeek2\ConsoleAppWeek2\bin\Debug\ConsoleAppWeek2.exe
+\\iam.local\isilon\userNonIAM\Angelo.deMello\CCC\OOP\ConsoleAppWeek2\ConsoleAppWeek2\bin\Debug\ConsoleAppWeek2.pdb
+\\iam.local\isilon\userNonIAM\Angelo.deMello\CCC\OOP\ConsoleAppWeek2\ConsoleAppWeek2\obj\Debug\ConsoleAppWeek2.csprojAssemblyReference.cache
+\\iam.local\isilon\userNonIAM\Angelo.deMello\CCC\OOP\ConsoleAppWeek2\ConsoleAppWeek2\obj\Debug\ConsoleAppWeek2.csproj.CoreCompileInputs.cache
+\\iam.local\isilon\userNonIAM\Angelo.deMello\CCC\OOP\ConsoleAppWeek2\ConsoleAppWeek2\obj\Debug\ConsoleAppWeek2.exe
+\\iam.local\isilon\userNonIAM\Angelo.deMello\CCC\OOP\ConsoleAppWeek2\ConsoleAppWeek2\obj\Debug\ConsoleAppWeek2.pdb
