@@ -1,0 +1,14 @@
+C:\Users\Angelo\Desktop\Inheritance\Inheritance\Inheritance\bin\Debug\Inheritance.exe.config
+C:\Users\Angelo\Desktop\Inheritance\Inheritance\Inheritance\bin\Debug\Inheritance.exe
+C:\Users\Angelo\Desktop\Inheritance\Inheritance\Inheritance\bin\Debug\Inheritance.pdb
+C:\Users\Angelo\Desktop\Inheritance\Inheritance\Inheritance\obj\Debug\Inheritance.csprojAssemblyReference.cache
+C:\Users\Angelo\Desktop\Inheritance\Inheritance\Inheritance\obj\Debug\Inheritance.csproj.CoreCompileInputs.cache
+C:\Users\Angelo\Desktop\Inheritance\Inheritance\Inheritance\obj\Debug\Inheritance.exe
+C:\Users\Angelo\Desktop\Inheritance\Inheritance\Inheritance\obj\Debug\Inheritance.pdb
+C:\Users\Angelo\Desktop\Inheritance\Inheritance\bin\Debug\Inheritance.exe.config
+C:\Users\Angelo\Desktop\Inheritance\Inheritance\bin\Debug\Inheritance.exe
+C:\Users\Angelo\Desktop\Inheritance\Inheritance\bin\Debug\Inheritance.pdb
+C:\Users\Angelo\Desktop\Inheritance\Inheritance\obj\Debug\Inheritance.csprojAssemblyReference.cache
+C:\Users\Angelo\Desktop\Inheritance\Inheritance\obj\Debug\Inheritance.csproj.CoreCompileInputs.cache
+C:\Users\Angelo\Desktop\Inheritance\Inheritance\obj\Debug\Inheritance.exe
+C:\Users\Angelo\Desktop\Inheritance\Inheritance\obj\Debug\Inheritance.pdb

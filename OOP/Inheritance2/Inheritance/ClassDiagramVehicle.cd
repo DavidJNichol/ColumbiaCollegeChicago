@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Inheritance.Class.Car">
+    <Position X="4.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAEAAAAAgAEAAAQCgAgAQAAAIAAIEAA=</HashCode>
+      <FileName>Models\Car.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Inheritance.Class.Eletric">
+    <Position X="2.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Models\Eletric.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Inheritance.Class.Motorcycle">
+    <Position X="8.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAgAAEAAAAAAAAAAAQCAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Models\Motorcycle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Inheritance.Class.Vehicle">
+    <Position X="6.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAEAAAAAAAABAAAAgAEAAAgAgAABAAA=</HashCode>
+      <FileName>Models\Vehicle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Inheritance.Driver">
+    <Position X="2.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAAAAACAAAQAAAgACAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Driver.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Inheritance.Music">
+    <Position X="13.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAAAAAAAAAAAgAAIAAAAAAAAIAAAAAAAA=</HashCode>
+      <FileName>Models\Music.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Inheritance.Rock">
+    <Position X="11.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Rock.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Inheritance.Reagge">
+    <Position X="13.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Reagge.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Inheritance.Eletronic">
+    <Position X="15.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Eletronic.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
