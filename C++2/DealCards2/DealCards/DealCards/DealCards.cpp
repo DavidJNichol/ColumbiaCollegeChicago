@@ -5,19 +5,35 @@
 #include "Player.h"
 #include "Deck.h"
 #include <iostream>
+#include <vector>
+#include <algorithm>
 
 using namespace std;
 
 int main()
 {
-	string Name[4]{ "Angelo", "Rafael", "Steve", "Bagomeu" };
 	Deck *deck = new Deck();
-	 
-	for (string player : Name) {
-		cout << player + " ";
+	Player *angelo = new Player();
+	angelo->name = "Angelo";
+	Player *rafael = new Player();;
+	rafael->name = "Rafael";
+	Player *steve = new Player();;
+	steve->name = "Steve";
+	Player *bagomeu = new Player();;
+	bagomeu->name = "Bagomeu";
+
+	Player *p[4]{ angelo, rafael, steve, bagomeu };	
+
+	//Show name
+	//shuffle the deck
+	//deal a card and add to player's hand
+	//delete the card that was dealed
+	for (Player *player : p) {
+		cout << player->name + " ";
 		deck->shuffleDeck();
 		for (int i = 0; i < 2; i++) {
 			string card = deck->dealCard();
+			player->hand.push_back(card);
 			deck->deleteCard();
 			cout << card << " ";
 		}
@@ -28,28 +44,16 @@ int main()
 	cout << "Second Hand ! ";
 	cout << endl << endl;
 
-	for (string player : Name) {
-		cout << player + " ";
+	for (Player *player : p) {
+		cout << player->name + " ";
 		deck->shuffleDeck();
 		for (int i = 0; i < 3; i++) {
 			string card = deck->dealCard();
+			player->hand.push_back(card);
 			deck->deleteCard();
 			cout << card << " ";
 		}
 		cout << endl;
-	}
-
-	string lastCard = deck->dealCard();
-	deck->deleteCard();
-	cout << "Last Card : " << lastCard << endl;
-
-	//Decide the Player
-	cout << endl;
-	cout << "Player: ";
-	deck->sufflePlayerPosition();
-	int pPosition = deck->dealPlayerPosition();
-	for (int i = 0; i < 1; i++) {
-		cout << Name[pPosition];
 	}
 
 	//The Trump
@@ -60,7 +64,35 @@ int main()
 	cout << trump << " ";
 	cout << endl << endl;
 
+	string card = angelo->hand.at(1);
+	cout << card << endl;
+
+	
+	for (Player *player : p) {
+		for (int i = 0; i < 8; i++) {
+			string card = player->hand[i];
+			bool found = card.find(trump);
+			if (found == true && card == "J" + trump) {
+				
+				cout << player->name + "will start playing";
+			}else if (found == true && card == "K" + trump) {
+				
+				cout << player->name + "will start playing";
+			}else if (found == true && card == "Q" + trump) {
+				
+				cout << player->name + "will start playing";
+			}else if (found == true && card == "10" + trump) {
+				
+				cout << player->name + "will start playing";
+			}
+		}		
+	}
+		
 	delete deck;
+	delete rafael;
+	delete angelo;
+	delete steve;
+	delete bagomeu;
 	return 0;
 	
 }

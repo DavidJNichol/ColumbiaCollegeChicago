@@ -9,8 +9,9 @@ class Player
 public:
 	Player();
 	~Player();
-private:
-	string Name[4];
+	void addCardToPlayerHand(Player p, string card);
+	
+	string name;
 	vector<string> hand;
 };
 
