@@ -1,0 +1,7 @@
+C:\Users\Angelo\Desktop\VirtualPetAngelo\VirtualPetAngelo\VirtualPetAngelo\obj\Debug\VirtualPetAngelo.csprojAssemblyReference.cache
+C:\Users\Angelo\Desktop\VirtualPetAngelo\VirtualPetAngelo\VirtualPetAngelo\obj\Debug\VirtualPetAngelo.csproj.CoreCompileInputs.cache
+C:\Users\Angelo\Desktop\VirtualPetAngelo\VirtualPetAngelo\VirtualPetAngelo\bin\Debug\VirtualPetAngelo.exe.config
+C:\Users\Angelo\Desktop\VirtualPetAngelo\VirtualPetAngelo\VirtualPetAngelo\bin\Debug\VirtualPetAngelo.exe
+C:\Users\Angelo\Desktop\VirtualPetAngelo\VirtualPetAngelo\VirtualPetAngelo\bin\Debug\VirtualPetAngelo.pdb
+C:\Users\Angelo\Desktop\VirtualPetAngelo\VirtualPetAngelo\VirtualPetAngelo\obj\Debug\VirtualPetAngelo.exe
+C:\Users\Angelo\Desktop\VirtualPetAngelo\VirtualPetAngelo\VirtualPetAngelo\obj\Debug\VirtualPetAngelo.pdb
