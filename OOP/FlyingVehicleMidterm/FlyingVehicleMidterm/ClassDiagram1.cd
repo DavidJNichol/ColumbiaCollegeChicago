@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="FlyingVehicleMidterm.AerialVehicle">
+    <Position X="1.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIEAAIAAAAEAgAAIAAAAAAAAAEAABAAAQAAIAAA=</HashCode>
+      <FileName>Models\AerialVehicle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FlyingVehicleMidterm.Airplane">
+    <Position X="0.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Airplane.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FlyingVehicleMidterm.ToyPlane">
+    <Position X="0.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAIAAAAAAAIEAAAgAAAAAAAAAAAAAACAEAAAAAAA=</HashCode>
+      <FileName>Models\ToyPlane.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FlyingVehicleMidterm.Engine">
+    <Position X="4.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAEAAAAAAAAAAABAAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>Models\Engine.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FlyingVehicleMidterm.Helicopter">
+    <Position X="2.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Helicopter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
