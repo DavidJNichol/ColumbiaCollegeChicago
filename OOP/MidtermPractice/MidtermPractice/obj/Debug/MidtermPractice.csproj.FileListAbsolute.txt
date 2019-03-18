@@ -1,0 +1,7 @@
+C:\Users\Angelo\Desktop\New folder (2)\MidtermPractice\MidtermPractice\bin\Debug\MidtermPractice.exe.config
+C:\Users\Angelo\Desktop\New folder (2)\MidtermPractice\MidtermPractice\bin\Debug\MidtermPractice.exe
+C:\Users\Angelo\Desktop\New folder (2)\MidtermPractice\MidtermPractice\bin\Debug\MidtermPractice.pdb
+C:\Users\Angelo\Desktop\New folder (2)\MidtermPractice\MidtermPractice\obj\Debug\MidtermPractice.csprojAssemblyReference.cache
+C:\Users\Angelo\Desktop\New folder (2)\MidtermPractice\MidtermPractice\obj\Debug\MidtermPractice.csproj.CoreCompileInputs.cache
+C:\Users\Angelo\Desktop\New folder (2)\MidtermPractice\MidtermPractice\obj\Debug\MidtermPractice.exe
+C:\Users\Angelo\Desktop\New folder (2)\MidtermPractice\MidtermPractice\obj\Debug\MidtermPractice.pdb
