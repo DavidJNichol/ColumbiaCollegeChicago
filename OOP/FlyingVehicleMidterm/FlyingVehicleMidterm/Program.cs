@@ -10,6 +10,10 @@ namespace FlyingVehicleMidterm
     {
         static void Main(string[] args)
         {
+            FlyingVehicleTester fvt = new FlyingVehicleTester();
+
+            fvt.Test();
+
         }
     }
 }

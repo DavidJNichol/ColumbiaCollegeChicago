@@ -5,7 +5,7 @@ using System.Text;
 
 namespace FlyingVehicleMidterm
 {
-    public class AerialVehicle
+    public abstract class AerialVehicle
     {
         public int CurrentAltitude;
         public Engine Engine;
@@ -41,7 +41,7 @@ namespace FlyingVehicleMidterm
         {
             this.CurrentAltitude -= HowManyFeet;
 
-            if (this.CurrentAltitude <= 1000)
+            if (this.CurrentAltitude < 0)
             {
                 Console.WriteLine("It can't Fly down 0ft !");
                 this.CurrentAltitude += HowManyFeet;
@@ -100,9 +100,29 @@ namespace FlyingVehicleMidterm
             return EngineStartedString;
         }
 
-        public string About()
+        public virtual string TakeOff()
         {
-            string s = $"About";
+            if (this.Engine.IsStarted)
+            {
+                this.IsFlying = true;
+                string s = $"{this} can fly , it is wound up.\n";
+                s += $"{this} can fly it's engine is started.";
+
+                return s;
+            }
+            else
+            {
+                string s = $"{this} can't fly , it is not wound up.\n";
+                s += $"{this} can't fly it's engine is not started.";
+
+                return s;
+            }
+        }
+
+        public virtual string About()
+        {
+            string s = $"This {this} has a max altitude of {this.MaxAltitude}\n";
+            s += $"It's current altitude is {this.CurrentAltitude}\n";
             
             return s;
         }

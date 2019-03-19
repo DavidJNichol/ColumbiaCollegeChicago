@@ -11,6 +11,8 @@ namespace FlyingVehicleMidterm
 
         public ToyPlane()
         {
+            this.MaxAltitude = 50;
+            this.CurrentAltitude = 0;
             this.isWoundUp = false;
         }
 
@@ -33,13 +35,12 @@ namespace FlyingVehicleMidterm
 
         public void UnWind()
         {
-            this.isWoundUp = false; ;
+            this.isWoundUp = false;
         }
 
-        public string TakeOff()
+        public override string TakeOff()
         {
-            string s = $"";
-            return s;
+            return base.TakeOff();
         }
 
         public string getWindUpString()
@@ -48,11 +49,22 @@ namespace FlyingVehicleMidterm
             return s;
         }
 
-        public string About()
+        public override string About()
         {
-            string s = $"Is wound up: {this.isWoundUp}";
+            if (this.isWoundUp)
+            {
+                string s = $"{base.About()}\n";
+                s += "it's no wound up.";
 
-            return s;
+                return s;
+            }
+            else
+            {
+                string s = $"{base.About()}\n";
+                s += "it's wound up.";
+
+                return s;
+            }
         }
     }
 }

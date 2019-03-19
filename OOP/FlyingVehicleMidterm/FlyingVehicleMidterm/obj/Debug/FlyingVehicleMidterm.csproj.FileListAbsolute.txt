@@ -1,0 +1,7 @@
+C:\Users\TEMP\Desktop\FlyingVehicleMidterm\FlyingVehicleMidterm\bin\Debug\FlyingVehicleMidterm.exe.config
+C:\Users\TEMP\Desktop\FlyingVehicleMidterm\FlyingVehicleMidterm\bin\Debug\FlyingVehicleMidterm.exe
+C:\Users\TEMP\Desktop\FlyingVehicleMidterm\FlyingVehicleMidterm\bin\Debug\FlyingVehicleMidterm.pdb
+C:\Users\TEMP\Desktop\FlyingVehicleMidterm\FlyingVehicleMidterm\obj\Debug\FlyingVehicleMidterm.csprojAssemblyReference.cache
+C:\Users\TEMP\Desktop\FlyingVehicleMidterm\FlyingVehicleMidterm\obj\Debug\FlyingVehicleMidterm.csproj.CoreCompileInputs.cache
+C:\Users\TEMP\Desktop\FlyingVehicleMidterm\FlyingVehicleMidterm\obj\Debug\FlyingVehicleMidterm.exe
+C:\Users\TEMP\Desktop\FlyingVehicleMidterm\FlyingVehicleMidterm\obj\Debug\FlyingVehicleMidterm.pdb
