@@ -1,19 +1,21 @@
 #pragma once
+
+#include <iostream>
 #include <string>
 #include <vector>
-#include "Bank.h"
+#include "Account.h"
 
-class Profile : Bank
+class Profile
 {
 public:
 	Profile();
 	~Profile();
-	void createProfile();
+	void createAccount();
 
-	int ID;
-	std::string User;
-	std::string Address;
-	std::vector<int> Accounts;
+	int p_ID;
+	std::string p_User;
+	std::string p_Address;
+	std::vector<Account> p_accounts;
 
 };
 

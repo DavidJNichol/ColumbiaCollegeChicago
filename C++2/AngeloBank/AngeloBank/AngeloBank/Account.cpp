@@ -1,10 +1,9 @@
 #include "stdafx.h"
 #include "Account.h"
-#include <iostream>
-
 
 Account::Account()
 {
+	ID_Account = 0;
 }
 
 
@@ -12,7 +11,3 @@ Account::~Account()
 {
 }
 
-void Account::createAccount()
-{
-
-}

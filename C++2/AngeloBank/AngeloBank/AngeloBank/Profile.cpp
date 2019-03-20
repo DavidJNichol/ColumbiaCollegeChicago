@@ -1,6 +1,6 @@
 #include "stdafx.h"
 #include "Profile.h"
-#include <iostream>
+
 
 
 Profile::Profile()
@@ -12,19 +12,18 @@ Profile::~Profile()
 {
 }
 
-void Profile::createProfile()
-{
-	this->ID++;
-
-	std::cout << "Username: ";
-	std::string name;
-	std::cin >> name;
-	profiles[ID].User = name;
-
-	std::cout << "Addres: ";
-	std::string address;
-	std::cin >> address;
-	profiles[ID].Address = address;
-
+void Profile::createAccount() {
 	
+	Account a;
+	
+	a.Balance = 25;
+
+	p_accounts.push_back(a);
+
+	std::cout << "Your ID: " << a.ID_Account << std::endl;
+	std::cout << "Your Balance: " << a.Balance << std::endl;
+
+	std::cout << "Account created";
+	a.ID_Account = a.ID_Account + 1;
+	getchar();
 }

@@ -3,7 +3,7 @@
 #include <vector>
 #include <string>
 
-class TransactionHistory : Account
+class TransactionHistory
 {
 public:
 	TransactionHistory();

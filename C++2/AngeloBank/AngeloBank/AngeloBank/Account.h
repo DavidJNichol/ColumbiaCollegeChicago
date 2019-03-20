@@ -1,15 +1,13 @@
 #pragma once
 
+#include <iostream>
 #include <vector>
-#include "Profile.h"
 
-class Account : Profile
+class Account
 {
 public:
 	Account();
 	~Account();
-	void createAccount();
-	void checkBalanceAccount();
 
 	int ID_Account;
 	int Balance;
