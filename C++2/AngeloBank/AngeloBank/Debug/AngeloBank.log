@@ -1,2 +1,2 @@
-﻿  AngeloBank.cpp
-  AngeloBank.vcxproj -> C:\Users\angelo.demello\Desktop\AngeloBank\Debug\AngeloBank.exe
+﻿Profile.obj : error LNK2001: unresolved external symbol "public: static int Account::current_id" (?current_id@Account@@2HA)
+C:\Users\angelo.demello.IAM\Desktop\AngeloBank\Debug\AngeloBank.exe : fatal error LNK1120: 1 unresolved externals

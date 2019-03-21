@@ -30,9 +30,6 @@
     <ClInclude Include="Account.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="TransactionHistory.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Bank.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -51,9 +48,6 @@
       <Filter>Models</Filter>
     </ClCompile>
     <ClCompile Include="Profile.cpp">
-      <Filter>Models</Filter>
-    </ClCompile>
-    <ClCompile Include="TransactionHistory.cpp">
       <Filter>Models</Filter>
     </ClCompile>
   </ItemGroup>

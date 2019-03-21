@@ -16,14 +16,16 @@ void Profile::createAccount() {
 	
 	Account a;
 	
-	a.Balance = 25;
+	a.ID_Account = 
 
+	a.Balance = 25;
+	a.ID_Account = 0;
 	p_accounts.push_back(a);
 
 	std::cout << "Your ID: " << a.ID_Account << std::endl;
 	std::cout << "Your Balance: " << a.Balance << std::endl;
 
 	std::cout << "Account created";
-	a.ID_Account = a.ID_Account + 1;
+	
 	getchar();
 }

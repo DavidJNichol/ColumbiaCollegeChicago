@@ -15,6 +15,12 @@ public:
 	void createProfile();
 	void findAccount();
 	void showAccountStatus();
+	void withdrawMoneyFromAccount();
+	void depositMoneyFromAccount();
+	void showTransactionHistory();
+	void addValueToTransactionHistoryWithdraw(int amount);
+	void addValueToTransactionHistoryDeposit(int amount);
+
 
 	std::vector<Profile> profiles;
 };
