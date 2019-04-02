@@ -5,3 +5,10 @@ C:\Users\TEMP\Desktop\FlyingVehicleMidterm\FlyingVehicleMidterm\obj\Debug\Flying
 C:\Users\TEMP\Desktop\FlyingVehicleMidterm\FlyingVehicleMidterm\obj\Debug\FlyingVehicleMidterm.csproj.CoreCompileInputs.cache
 C:\Users\TEMP\Desktop\FlyingVehicleMidterm\FlyingVehicleMidterm\obj\Debug\FlyingVehicleMidterm.exe
 C:\Users\TEMP\Desktop\FlyingVehicleMidterm\FlyingVehicleMidterm\obj\Debug\FlyingVehicleMidterm.pdb
+C:\Users\Angelo\Desktop\GitCCC\ColumbiaCollegeChicago\OOP\FlyingVehicleMidterm\FlyingVehicleMidterm\bin\Debug\FlyingVehicleMidterm.exe.config
+C:\Users\Angelo\Desktop\GitCCC\ColumbiaCollegeChicago\OOP\FlyingVehicleMidterm\FlyingVehicleMidterm\bin\Debug\FlyingVehicleMidterm.exe
+C:\Users\Angelo\Desktop\GitCCC\ColumbiaCollegeChicago\OOP\FlyingVehicleMidterm\FlyingVehicleMidterm\bin\Debug\FlyingVehicleMidterm.pdb
+C:\Users\Angelo\Desktop\GitCCC\ColumbiaCollegeChicago\OOP\FlyingVehicleMidterm\FlyingVehicleMidterm\obj\Debug\FlyingVehicleMidterm.csprojAssemblyReference.cache
+C:\Users\Angelo\Desktop\GitCCC\ColumbiaCollegeChicago\OOP\FlyingVehicleMidterm\FlyingVehicleMidterm\obj\Debug\FlyingVehicleMidterm.csproj.CoreCompileInputs.cache
+C:\Users\Angelo\Desktop\GitCCC\ColumbiaCollegeChicago\OOP\FlyingVehicleMidterm\FlyingVehicleMidterm\obj\Debug\FlyingVehicleMidterm.exe
+C:\Users\Angelo\Desktop\GitCCC\ColumbiaCollegeChicago\OOP\FlyingVehicleMidterm\FlyingVehicleMidterm\obj\Debug\FlyingVehicleMidterm.pdb

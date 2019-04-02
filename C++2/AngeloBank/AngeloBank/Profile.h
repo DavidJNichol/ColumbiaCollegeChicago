@@ -15,7 +15,6 @@ public:
 	int p_ID;
 	std::string p_User;
 	std::string p_Address;
-	std::vector<Account> p_accounts;
-
+	std::vector<Account*> p_accounts;
 };
 

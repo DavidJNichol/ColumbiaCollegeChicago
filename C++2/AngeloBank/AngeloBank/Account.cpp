@@ -1,19 +1,29 @@
 #include "stdafx.h"
 #include "Account.h"
 
+
+Account::Account() 
+{
+}
+
 Account::~Account()
 {
 }
 
 void Account::addValueToTransactionHistoryWithdraw(int amount) {
+	Transaction *t = new Transaction();
+	
+	t->Withdraw= amount;
 
-
-	tHistoryWithdraw.push_back(amount);
+	t_History.push_back(&(*t));
 }
 
 void Account::addValueToTransactionHistoryDeposit(int amount) {
 
+	Transaction *t = new Transaction();
 
-	tHistoryWithdraw.push_back(amount);
+	t->Deposits = amount;
+
+	t_History.push_back(&(*t));
 }
 

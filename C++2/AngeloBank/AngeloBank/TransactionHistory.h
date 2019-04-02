@@ -9,7 +9,7 @@ public:
 	TransactionHistory();
 	~TransactionHistory();
 
-	std::vector<std::string> Deposits;
-	std::vector<std::string> Whitdraw;
+	int Deposits;
+	int Whitdraw;
 };
 

@@ -1,5 +1,6 @@
 #include "Profile.h"
 #include "Account.h"
+#include "Transaction.h"
 #include <iostream>
 #include <algorithm>
 #include <sstream>
@@ -17,10 +18,11 @@ public:
 	void showAccountStatus();
 	void withdrawMoneyFromAccount();
 	void depositMoneyFromAccount();
-	void showTransactionHistory();
-	void addValueToTransactionHistoryWithdraw(int amount);
-	void addValueToTransactionHistoryDeposit(int amount);
+	void showTransactionHistoryDeposit();
+	void showTransactionHistoryWithdraw();
+	void addValueToTransactionHistoryWithdraw(int amount, int account);
+	void addValueToTransactionHistoryDeposit(int amount, int account);
 
 
-	std::vector<Profile> profiles;
+	std::vector<Profile*> profiles;
 };

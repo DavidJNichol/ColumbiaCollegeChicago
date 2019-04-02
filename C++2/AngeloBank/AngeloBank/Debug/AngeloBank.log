@@ -1,2 +1,26 @@
-﻿Profile.obj : error LNK2001: unresolved external symbol "public: static int Account::current_id" (?current_id@Account@@2HA)
-C:\Users\angelo.demello.IAM\Desktop\AngeloBank\Debug\AngeloBank.exe : fatal error LNK1120: 1 unresolved externals
+﻿  Account.cpp
+  AngeloBank.cpp
+  Bank.cpp
+c:\users\angelo\desktop\angelobank\angelobank\bank.cpp(40): warning C4018: '<': signed/unsigned mismatch
+c:\users\angelo\desktop\angelobank\angelobank\bank.cpp(48): warning C4018: '<': signed/unsigned mismatch
+c:\users\angelo\desktop\angelobank\angelobank\bank.cpp(79): warning C4018: '<': signed/unsigned mismatch
+c:\users\angelo\desktop\angelobank\angelobank\bank.cpp(87): warning C4018: '<': signed/unsigned mismatch
+c:\users\angelo\desktop\angelobank\angelobank\bank.cpp(115): warning C4018: '<': signed/unsigned mismatch
+c:\users\angelo\desktop\angelobank\angelobank\bank.cpp(123): warning C4018: '<': signed/unsigned mismatch
+c:\users\angelo\desktop\angelobank\angelobank\bank.cpp(158): warning C4018: '<': signed/unsigned mismatch
+c:\users\angelo\desktop\angelobank\angelobank\bank.cpp(166): warning C4018: '<': signed/unsigned mismatch
+c:\users\angelo\desktop\angelobank\angelobank\bank.cpp(198): warning C4018: '<': signed/unsigned mismatch
+c:\users\angelo\desktop\angelobank\angelobank\bank.cpp(205): warning C4018: '<': signed/unsigned mismatch
+c:\users\angelo\desktop\angelobank\angelobank\bank.cpp(208): warning C4018: '<': signed/unsigned mismatch
+c:\users\angelo\desktop\angelobank\angelobank\bank.cpp(227): warning C4018: '<': signed/unsigned mismatch
+c:\users\angelo\desktop\angelobank\angelobank\bank.cpp(234): warning C4018: '<': signed/unsigned mismatch
+c:\users\angelo\desktop\angelobank\angelobank\bank.cpp(238): warning C4018: '<': signed/unsigned mismatch
+c:\users\angelo\desktop\angelobank\angelobank\bank.cpp(255): warning C4018: '<': signed/unsigned mismatch
+c:\users\angelo\desktop\angelobank\angelobank\bank.cpp(257): warning C4018: '<': signed/unsigned mismatch
+c:\users\angelo\desktop\angelobank\angelobank\bank.cpp(268): warning C4018: '<': signed/unsigned mismatch
+c:\users\angelo\desktop\angelobank\angelobank\bank.cpp(270): warning C4018: '<': signed/unsigned mismatch
+  Profile.cpp
+c:\users\angelo\desktop\angelobank\angelobank\profile.cpp(22): warning C4018: '<': signed/unsigned mismatch
+  TransactionHistory.cpp
+  Generating Code...
+  AngeloBank.vcxproj -> C:\Users\Angelo\Desktop\AngeloBank\Debug\AngeloBank.exe
