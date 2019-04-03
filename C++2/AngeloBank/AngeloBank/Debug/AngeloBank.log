@@ -1,26 +1,34 @@
-﻿  Account.cpp
-  AngeloBank.cpp
-  Bank.cpp
-c:\users\angelo\desktop\angelobank\angelobank\bank.cpp(40): warning C4018: '<': signed/unsigned mismatch
-c:\users\angelo\desktop\angelobank\angelobank\bank.cpp(48): warning C4018: '<': signed/unsigned mismatch
-c:\users\angelo\desktop\angelobank\angelobank\bank.cpp(79): warning C4018: '<': signed/unsigned mismatch
-c:\users\angelo\desktop\angelobank\angelobank\bank.cpp(87): warning C4018: '<': signed/unsigned mismatch
-c:\users\angelo\desktop\angelobank\angelobank\bank.cpp(115): warning C4018: '<': signed/unsigned mismatch
-c:\users\angelo\desktop\angelobank\angelobank\bank.cpp(123): warning C4018: '<': signed/unsigned mismatch
-c:\users\angelo\desktop\angelobank\angelobank\bank.cpp(158): warning C4018: '<': signed/unsigned mismatch
-c:\users\angelo\desktop\angelobank\angelobank\bank.cpp(166): warning C4018: '<': signed/unsigned mismatch
-c:\users\angelo\desktop\angelobank\angelobank\bank.cpp(198): warning C4018: '<': signed/unsigned mismatch
-c:\users\angelo\desktop\angelobank\angelobank\bank.cpp(205): warning C4018: '<': signed/unsigned mismatch
-c:\users\angelo\desktop\angelobank\angelobank\bank.cpp(208): warning C4018: '<': signed/unsigned mismatch
-c:\users\angelo\desktop\angelobank\angelobank\bank.cpp(227): warning C4018: '<': signed/unsigned mismatch
-c:\users\angelo\desktop\angelobank\angelobank\bank.cpp(234): warning C4018: '<': signed/unsigned mismatch
-c:\users\angelo\desktop\angelobank\angelobank\bank.cpp(238): warning C4018: '<': signed/unsigned mismatch
-c:\users\angelo\desktop\angelobank\angelobank\bank.cpp(255): warning C4018: '<': signed/unsigned mismatch
-c:\users\angelo\desktop\angelobank\angelobank\bank.cpp(257): warning C4018: '<': signed/unsigned mismatch
-c:\users\angelo\desktop\angelobank\angelobank\bank.cpp(268): warning C4018: '<': signed/unsigned mismatch
-c:\users\angelo\desktop\angelobank\angelobank\bank.cpp(270): warning C4018: '<': signed/unsigned mismatch
-  Profile.cpp
-c:\users\angelo\desktop\angelobank\angelobank\profile.cpp(22): warning C4018: '<': signed/unsigned mismatch
-  TransactionHistory.cpp
-  Generating Code...
-  AngeloBank.vcxproj -> C:\Users\Angelo\Desktop\AngeloBank\Debug\AngeloBank.exe
+﻿  Bank.cpp
+c:\users\angelo.demello\desktop\angelobank\angelobank\bank.cpp(39): warning C4018: '<': signed/unsigned mismatch
+c:\users\angelo.demello\desktop\angelobank\angelobank\bank.cpp(47): warning C4018: '<': signed/unsigned mismatch
+c:\users\angelo.demello\desktop\angelobank\angelobank\bank.cpp(74): warning C4018: '<': signed/unsigned mismatch
+c:\users\angelo.demello\desktop\angelobank\angelobank\bank.cpp(83): warning C4018: '<': signed/unsigned mismatch
+c:\users\angelo.demello\desktop\angelobank\angelobank\bank.cpp(85): warning C4018: '<': signed/unsigned mismatch
+c:\users\angelo.demello\desktop\angelobank\angelobank\bank.cpp(97): warning C4018: '<': signed/unsigned mismatch
+c:\users\angelo.demello\desktop\angelobank\angelobank\bank.cpp(111): warning C4018: '<': signed/unsigned mismatch
+c:\users\angelo.demello\desktop\angelobank\angelobank\bank.cpp(120): warning C4018: '<': signed/unsigned mismatch
+c:\users\angelo.demello\desktop\angelobank\angelobank\bank.cpp(124): warning C4018: '<': signed/unsigned mismatch
+c:\users\angelo.demello\desktop\angelobank\angelobank\bank.cpp(134): warning C4018: '<': signed/unsigned mismatch
+c:\users\angelo.demello\desktop\angelobank\angelobank\bank.cpp(167): warning C4018: '<': signed/unsigned mismatch
+c:\users\angelo.demello\desktop\angelobank\angelobank\bank.cpp(176): warning C4018: '<': signed/unsigned mismatch
+c:\users\angelo.demello\desktop\angelobank\angelobank\bank.cpp(180): warning C4018: '<': signed/unsigned mismatch
+c:\users\angelo.demello\desktop\angelobank\angelobank\bank.cpp(190): warning C4018: '<': signed/unsigned mismatch
+c:\users\angelo.demello\desktop\angelobank\angelobank\bank.cpp(212): warning C4018: '<': signed/unsigned mismatch
+c:\users\angelo.demello\desktop\angelobank\angelobank\bank.cpp(222): warning C4018: '<': signed/unsigned mismatch
+c:\users\angelo.demello\desktop\angelobank\angelobank\bank.cpp(224): warning C4018: '<': signed/unsigned mismatch
+c:\users\angelo.demello\desktop\angelobank\angelobank\bank.cpp(235): warning C4018: '<': signed/unsigned mismatch
+c:\users\angelo.demello\desktop\angelobank\angelobank\bank.cpp(241): warning C4018: '<': signed/unsigned mismatch
+c:\users\angelo.demello\desktop\angelobank\angelobank\bank.cpp(256): warning C4018: '<': signed/unsigned mismatch
+c:\users\angelo.demello\desktop\angelobank\angelobank\bank.cpp(266): warning C4018: '<': signed/unsigned mismatch
+c:\users\angelo.demello\desktop\angelobank\angelobank\bank.cpp(268): warning C4018: '<': signed/unsigned mismatch
+c:\users\angelo.demello\desktop\angelobank\angelobank\bank.cpp(279): warning C4018: '<': signed/unsigned mismatch
+c:\users\angelo.demello\desktop\angelobank\angelobank\bank.cpp(285): warning C4018: '<': signed/unsigned mismatch
+c:\users\angelo.demello\desktop\angelobank\angelobank\bank.cpp(300): warning C4018: '<': signed/unsigned mismatch
+c:\users\angelo.demello\desktop\angelobank\angelobank\bank.cpp(302): warning C4018: '<': signed/unsigned mismatch
+c:\users\angelo.demello\desktop\angelobank\angelobank\bank.cpp(313): warning C4018: '<': signed/unsigned mismatch
+c:\users\angelo.demello\desktop\angelobank\angelobank\bank.cpp(315): warning C4018: '<': signed/unsigned mismatch
+c:\users\angelo.demello\desktop\angelobank\angelobank\bank.cpp(325): warning C4018: '<': signed/unsigned mismatch
+c:\users\angelo.demello\desktop\angelobank\angelobank\bank.cpp(334): warning C4018: '<': signed/unsigned mismatch
+c:\users\angelo.demello\desktop\angelobank\angelobank\bank.cpp(338): warning C4018: '<': signed/unsigned mismatch
+c:\users\angelo.demello\desktop\angelobank\angelobank\bank.cpp(356): warning C4018: '<': signed/unsigned mismatch
+  AngeloBank.vcxproj -> C:\Users\angelo.demello\Desktop\AngeloBank\Debug\AngeloBank.exe

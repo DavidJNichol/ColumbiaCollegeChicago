@@ -20,9 +20,9 @@ public:
 	void depositMoneyFromAccount();
 	void showTransactionHistoryDeposit();
 	void showTransactionHistoryWithdraw();
-	void addValueToTransactionHistoryWithdraw(int amount, int account);
-	void addValueToTransactionHistoryDeposit(int amount, int account);
-
+	void addValueToTransactionHistoryWithdraw(int profile, int amount, int account);
+	void addValueToTransactionHistoryDeposit(int profile, int amount, int account);
+	void transferMoneyBetweenAccounts();
 
 	std::vector<Profile*> profiles;
 };

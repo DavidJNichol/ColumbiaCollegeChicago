@@ -32,7 +32,6 @@ void Bank::createProfile()
 }
 
 void Bank::findAccount() {
-
 	std::cout << "Which profile: ";
 	std::string prof;
 	std::cin >> prof;	
@@ -72,12 +71,23 @@ void Bank::findAccount() {
 }
 
 void Bank::showAccountStatus() {
+	for (int i = 0; i < profiles.size(); i++)
+	{
+		std::cout << profiles[i]->p_User << std::endl;
+	}
+	
 	std::cout << "Which profile: ";
 	std::string prof;
 	std::cin >> prof;
 
 	for (int i = 0; i < profiles.size(); i++)
 	{
+		for (int k = 0; k < profiles[i]->p_accounts.size(); k++)
+		{
+			std::cout << profiles[i]->p_accounts[k]->ID_Account << std::endl;
+		}
+
+
 		if (profiles[i]->p_User == prof)
 		{
 			std::cout << "Which account: ";
@@ -92,22 +102,17 @@ void Bank::showAccountStatus() {
 					std::cout << "Balance: " << profiles[i]->p_accounts[j]->Balance;
 					getchar();
 				}
-				else {
-					std::cout << "Wrong Account !";
-					break;
-				}
 			}
-			break;
-		}
-		else {
-			std::cout << "Wrong Profile";
-			getchar();
-			break;
 		}
 	}
 }
 
 void Bank::withdrawMoneyFromAccount() {
+	for (int i = 0; i < profiles.size(); i++)
+	{
+		std::cout << profiles[i]->p_User << std::endl;
+	}
+	
 	std::cout << "Which profile: ";
 	std::string prof;
 	std::cin >> prof;
@@ -116,23 +121,27 @@ void Bank::withdrawMoneyFromAccount() {
 	{
 		if (profiles[i]->p_User == prof)
 		{
+			for (int k = 0; k < profiles[i]->p_accounts.size(); k++)
+			{
+				std::cout << profiles[i]->p_accounts[k]->ID_Account << std::endl;
+			}
+
+
 			std::cout << "Which account: ";
 			int account;
 			std::cin >> account;
 
 			for (int j = 0; j < profiles[i]->p_accounts.size(); j++)
 			{
-				if (profiles[i]->p_accounts[j]->ID_Account == account)
-				{
+				if (profiles[i]->p_accounts[j]->ID_Account == account) {
 					std::cout << "How much you want to withdraw ?: ";
 					int amount;
 					std::cin >> amount;
 
-					if (profiles[i]->p_accounts[j]->Balance >= amount) {
-
+					if (profiles[i]->p_accounts[j]->Balance > amount) {
 						profiles[i]->p_accounts[j]->Balance = profiles[i]->p_accounts[j]->Balance - amount;
 
-						addValueToTransactionHistoryWithdraw(amount, account);
+						addValueToTransactionHistoryWithdraw(i, amount, j);
 
 						getchar();
 						std::cout << "Current Balance: " << profiles[i]->p_accounts[j]->Balance;
@@ -140,7 +149,11 @@ void Bank::withdrawMoneyFromAccount() {
 						break;
 					}
 					else {
-						std::cout << "Not enough amount to withdraw !";
+						getchar();
+						std::cout << "Not Enough money to withdraw ! " << std::endl;
+						std::cout << std::endl;
+						std::cout << "Current Balance: " << profiles[i]->p_accounts[j]->Balance << std::endl;
+						std::cout << "Amount requested: " << amount;
 						getchar();
 						break;
 					}
@@ -151,6 +164,11 @@ void Bank::withdrawMoneyFromAccount() {
 }
 
 void Bank::depositMoneyFromAccount() {
+	for (int i = 0; i < profiles.size(); i++)
+	{
+		std::cout << profiles[i]->p_User << std::endl;
+	}
+	
 	std::cout << "Which profile: ";
 	std::string prof;
 	std::cin >> prof;
@@ -159,26 +177,27 @@ void Bank::depositMoneyFromAccount() {
 	{
 		if (profiles[i]->p_User == prof)
 		{
+			for (int k = 0; k < profiles[i]->p_accounts.size(); k++)
+			{
+				std::cout << profiles[i]->p_accounts[k]->ID_Account << std::endl;
+			}
+
+
 			std::cout << "Which account: ";
 			int account;
 			std::cin >> account;
 
 			for (int j = 0; j < profiles[i]->p_accounts.size(); j++)
 			{
-				
-				std::cout << profiles[i]->p_accounts[j]->ID_Account;
-				getchar();
-				
-				if (profiles[i]->p_accounts[j]->ID_Account == account)
-				{
+				if (profiles[i]->p_accounts[j]->ID_Account == account) {
 					std::cout << "How much you want to deposit ?: ";
 					int amount;
 					std::cin >> amount;
 
-					addValueToTransactionHistoryDeposit(amount, account);
-
 					profiles[i]->p_accounts[j]->Balance = profiles[i]->p_accounts[j]->Balance + amount;
-					
+
+					addValueToTransactionHistoryDeposit(i, amount, j);
+
 					getchar();
 					std::cout << "Current Balance: " << profiles[i]->p_accounts[j]->Balance;
 					getchar();
@@ -190,6 +209,11 @@ void Bank::depositMoneyFromAccount() {
 }
 
 void Bank::showTransactionHistoryDeposit() {
+	for (int i = 0; i < profiles.size(); i++)
+	{
+		std::cout << profiles[i]->p_User << std::endl;
+	}
+	
 	//show Deposits
 	std::cout << "Which profile: ";
 	std::string prof;
@@ -197,19 +221,29 @@ void Bank::showTransactionHistoryDeposit() {
 
 	for (int i = 0; i < profiles.size(); i++)
 	{
+		for (int k = 0; k < profiles[i]->p_accounts.size(); k++)
+		{
+			std::cout << profiles[i]->p_accounts[k]->ID_Account << std::endl;
+		}
+
 		if (profiles[i]->p_User == prof)
 		{
 			std::cout << "Which account: ";
 			int account;
 			std::cin >> account;
+
 			for (int j = 0; j < profiles[i]->p_accounts.size(); j++)
 			{
-				std::cout << "Deposits:" << std::endl;
-				for (int l = 0; l < profiles[i]->p_accounts[j]->t_History.size(); l++)
-				{
-					std::cout << profiles[i]->p_accounts[j]->t_History[l]->Deposits << std::endl;
+				if (profiles[i]->p_accounts[j]->ID_Account == account) {
+
+					std::cout << "Deposit:" << std::endl;
+
+					for (int l = 0; l < profiles[i]->p_accounts[j]->t_History.size(); l++)
+					{
+
+						std::cout << profiles[i]->p_accounts[j]->t_History[l]->Deposits << std::endl;
+					}
 				}
-				break;
 			}
 		}
 	}
@@ -219,7 +253,80 @@ void Bank::showTransactionHistoryDeposit() {
 }
 
 void Bank::showTransactionHistoryWithdraw() {
+	for (int i = 0; i < profiles.size(); i++)
+	{
+		std::cout << profiles[i]->p_User << std::endl;
+	}
+	
 	//show Withdraw
+	std::cout << "Which profile: ";
+	std::string prof;
+	std::cin >> prof;
+
+	for (int i = 0; i < profiles.size(); i++)
+	{
+		for (int k = 0; k < profiles[i]->p_accounts.size(); k++)
+		{
+			std::cout << profiles[i]->p_accounts[k]->ID_Account << std::endl;
+		}
+
+		if (profiles[i]->p_User == prof)
+		{
+			std::cout << "Which account: ";
+			int account;
+			std::cin >> account;
+
+			for (int j = 0; j < profiles[i]->p_accounts.size(); j++)
+			{
+				if (profiles[i]->p_accounts[j]->ID_Account == account) {
+
+					std::cout << "Withdraw:" << std::endl;
+					
+					for (int l = 0; l < profiles[i]->p_accounts[j]->t_History.size(); l++)
+					{
+
+						std::cout << profiles[i]->p_accounts[j]->t_History[l]->Withdraw << std::endl;
+					}
+				}				
+			}
+		}
+	}
+	getchar();
+	getchar();
+}
+
+void Bank::addValueToTransactionHistoryWithdraw(int profile, int amount, int account) {
+	
+	for (int i = 0; i < profiles.size(); i++)
+	{
+		for (int j = 0; j < profiles[i]->p_accounts.size(); j++)
+		{
+			if (i == profile && j == account) {
+				profiles[profile]->p_accounts[account]->addValueToTransactionHistoryWithdraw(amount);
+			}			
+		}
+	}
+}
+
+void Bank::addValueToTransactionHistoryDeposit(int profile, int amount, int account) {
+
+	for (int i = 0; i < profiles.size(); i++)
+	{
+		for (int j = 0; j < profiles[i]->p_accounts.size(); j++)
+		{
+			if (i == profile && j == account) {
+				profiles[profile]->p_accounts[account]->addValueToTransactionHistoryDeposit(amount);
+			}
+		}
+	}
+}
+
+void Bank::transferMoneyBetweenAccounts() {
+	for (int i = 0; i < profiles.size(); i++)
+	{
+		std::cout << profiles[i]->p_User << std::endl;
+	}
+	
 	std::cout << "Which profile: ";
 	std::string prof;
 	std::cin >> prof;
@@ -228,49 +335,64 @@ void Bank::showTransactionHistoryWithdraw() {
 	{
 		if (profiles[i]->p_User == prof)
 		{
-			std::cout << "Which account: ";
-			int account;
-			std::cin >> account;
+			for (int k = 0; k < profiles[i]->p_accounts.size(); k++)
+			{
+				std::cout << profiles[i]->p_accounts[k]->ID_Account << std::endl;
+			}
+
+
+			std::cout << "Which account to Withdraw: ";
+			int account1;
+			std::cin >> account1;
+
+			std::cout << "Which account to Deposit: ";
+			int account2;
+			std::cin >> account2;
+
+			std::cout << "How much money to transfer ?: ";
+			int amount;
+			std::cin >> amount;
+
 			for (int j = 0; j < profiles[i]->p_accounts.size(); j++)
 			{
-				std::cout << "Withdraw:" << std::endl;
-				
-				for (int l = 0; l < profiles[i]->p_accounts[j]->t_History.size(); l++)
-				{
+				//Will withdraw
+				if (profiles[i]->p_accounts[j]->ID_Account == account1) {
 					
-					if (profiles[i]->p_accounts[j]->ID_Account == account) {
-						std::cout << profiles[i]->p_accounts[j]->t_History[l]->Withdraw<< std::endl;
-					}					
+					if (profiles[i]->p_accounts[j]->Balance > amount) {
+						profiles[i]->p_accounts[j]->Balance = profiles[i]->p_accounts[j]->Balance - amount;
+
+						addValueToTransactionHistoryWithdraw(i, amount, j);
+
+						getchar();
+						std::cout << "Account: " << profiles[i]->p_accounts[j]->ID_Account << std::endl;
+						std::cout << "Current Balance: " << profiles[i]->p_accounts[j]->Balance;
+						getchar();
+					}
+					else {
+						getchar();
+						std::cout << "Not Enough money to transfer " << std::endl;
+						std::cout << std::endl;
+						std::cout << "Account: " << profiles[i]->p_accounts[j]->ID_Account << std::endl;
+						std::cout << "Current Balance: " << profiles[i]->p_accounts[j]->Balance << std::endl;
+						std::cout << "Amount requested: " << amount;
+						getchar();
+						break;
+					}
+					
 				}
-				break;
-			}
-		}
-	}
-	getchar();
-	getchar();
-}
+				//Will deposit
+				else if (profiles[i]->p_accounts[j]->ID_Account == account2) {
+					
+					profiles[i]->p_accounts[j]->Balance = profiles[i]->p_accounts[j]->Balance + amount;
 
-void Bank::addValueToTransactionHistoryWithdraw(int amount, int account) {
-	
-	for (int i = 0; i < profiles.size(); i++)
-	{
-		for (int j = 0; j < profiles[i]->p_accounts.size(); j++)
-		{
-			if (profiles[i]->p_accounts[j]->ID_Account = account) {
-				profiles[i]->p_accounts[j]->addValueToTransactionHistoryWithdraw(amount);
-			}
-		}
-	}
-}
+					addValueToTransactionHistoryDeposit(i, amount, j);
 
-void Bank::addValueToTransactionHistoryDeposit(int amount, int account) {
-
-	for (int i = 0; i < profiles.size(); i++)
-	{
-		for (int j = 0; j < profiles[i]->p_accounts.size(); j++)
-		{
-			if (profiles[i]->p_accounts[j]->ID_Account = account) {
-				profiles[i]->p_accounts[j]->addValueToTransactionHistoryDeposit(amount);
+					getchar();
+					std::cout << "Account: " << profiles[i]->p_accounts[j]->ID_Account << std::endl;
+					std::cout << "Current Balance: " << profiles[i]->p_accounts[j]->Balance;
+					getchar();
+					break;
+				}
 			}
 		}
 	}

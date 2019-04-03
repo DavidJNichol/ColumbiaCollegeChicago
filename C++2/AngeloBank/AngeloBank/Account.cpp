@@ -13,7 +13,7 @@ Account::~Account()
 void Account::addValueToTransactionHistoryWithdraw(int amount) {
 	Transaction *t = new Transaction();
 	
-	t->Withdraw= amount;
+	t->Withdraw = amount;
 
 	t_History.push_back(&(*t));
 }
