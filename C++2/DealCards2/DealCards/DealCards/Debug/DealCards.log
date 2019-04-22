@@ -1,2 +1,7 @@
-﻿  DealCards.cpp
-  DealCards.vcxproj -> C:\Users\angelo.demello\Desktop\DealCards2\DealCards\Debug\DealCards.exe
+﻿  pch.cpp
+  DealCards.cpp
+  Deck.cpp
+  Player.cpp
+  Generating Code...
+  LINK : C:\Users\Angelo\Desktop\GitCCC\ColumbiaCollegeChicago\C++2\DealCards2\DealCards\Debug\DealCards.exe not found or not built by the last incremental link; performing full link
+  DealCards.vcxproj -> C:\Users\Angelo\Desktop\GitCCC\ColumbiaCollegeChicago\C++2\DealCards2\DealCards\Debug\DealCards.exe
