@@ -14,6 +14,10 @@ public:
 	void showMenuOfFood();
 	void addFoodToOrder(int option);
 	void showCustomerOrder();
+	bool askCustomerMoreFood();
+	double chargeCustomer();
+	void returnChangeToCustomer(double customer_money);
+	void openTheRestaurant();
 
 private:
 	std::vector<Food*> list_of_food;

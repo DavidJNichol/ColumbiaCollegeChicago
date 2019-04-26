@@ -1,2 +1,16 @@
-﻿  RestaurantFinal.cpp
-  RestaurantFinal.vcxproj -> C:\Users\angelo.demello\Desktop\RestaurantFinal\RestaurantFinal\Debug\RestaurantFinal.exe
+﻿  Restaurant.cpp
+c:\users\angelo.demello\desktop\restaurantfinal\restaurantfinal\restaurant.cpp(32): warning C4018: '<': signed/unsigned mismatch
+c:\users\angelo.demello\desktop\restaurantfinal\restaurantfinal\restaurant.cpp(49): warning C4018: '<': signed/unsigned mismatch
+c:\users\angelo.demello\desktop\restaurantfinal\restaurantfinal\restaurant.cpp(100): warning C4018: '<': signed/unsigned mismatch
+c:\users\angelo.demello\desktop\restaurantfinal\restaurantfinal\restaurant.cpp(108): warning C4018: '<': signed/unsigned mismatch
+c:\users\angelo.demello\desktop\restaurantfinal\restaurantfinal\restaurant.cpp(118): warning C4018: '<=': signed/unsigned mismatch
+c:\users\angelo.demello\desktop\restaurantfinal\restaurantfinal\restaurant.cpp(122): warning C4018: '<': signed/unsigned mismatch
+c:\users\angelo.demello\desktop\restaurantfinal\restaurantfinal\restaurant.cpp(150): warning C4018: '<': signed/unsigned mismatch
+c:\users\angelo.demello\desktop\restaurantfinal\restaurantfinal\restaurant.cpp(158): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+c:\users\angelo.demello\desktop\restaurantfinal\restaurantfinal\restaurant.cpp(161): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+c:\users\angelo.demello\desktop\restaurantfinal\restaurantfinal\restaurant.cpp(164): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+c:\users\angelo.demello\desktop\restaurantfinal\restaurantfinal\restaurant.cpp(167): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+c:\users\angelo.demello\desktop\restaurantfinal\restaurantfinal\restaurant.cpp(170): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+  RestaurantFinal.cpp
+  Generating Code...
+  RestaurantFinal.vcxproj -> C:\Users\angelo.demello\Desktop\RestaurantFinal\Debug\RestaurantFinal.exe
