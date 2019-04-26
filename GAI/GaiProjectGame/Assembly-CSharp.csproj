@@ -60,13 +60,22 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\AStar\Grid.cs" />
+    <Compile Include="Assets\Scripts\AStar\Node.cs" />
+    <Compile Include="Assets\Scripts\AStar\Pathfinding.cs" />
     <Compile Include="Assets\Scripts\BehaviorAI.cs" />
     <Compile Include="Assets\Scripts\CameraBehavior.cs" />
+    <Compile Include="Assets\Scripts\FSM.cs" />
+    <Compile Include="Assets\Scripts\FSMBase\AI.cs" />
+    <Compile Include="Assets\Scripts\FSMBase\Chase.cs" />
+    <Compile Include="Assets\Scripts\FSMBase\Patrol.cs" />
     <Compile Include="Assets\Scripts\NavMeshComponents\Scripts\NavMeshLink.cs" />
     <Compile Include="Assets\Scripts\NavMeshComponents\Scripts\NavMeshModifier.cs" />
     <Compile Include="Assets\Scripts\NavMeshComponents\Scripts\NavMeshModifierVolume.cs" />
     <Compile Include="Assets\Scripts\NavMeshComponents\Scripts\NavMeshSurface.cs" />
+    <Compile Include="Assets\Scripts\NPCBaseState.cs" />
     <Compile Include="Assets\Scripts\PlayerMoviment.cs" />
+    <Compile Include="Assets\Scripts\SimpleFSM.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/Users/Angelo/Desktop/Second Semester/GAI/GaiProjectGame/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
