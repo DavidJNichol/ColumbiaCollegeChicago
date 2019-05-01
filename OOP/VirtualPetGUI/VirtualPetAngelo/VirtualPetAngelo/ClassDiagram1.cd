@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="VirtualPetAngelo.Player">
+    <Position X="2" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgEAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAIA=</HashCode>
+      <FileName>Models\Player.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VirtualPetAngelo.Pet">
+    <Position X="16" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAAAAAAAIAAAAAAIAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Pet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VirtualPetAngelo.Item">
+    <Position X="8.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAABAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Item.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VirtualPetAngelo.Store">
+    <Position X="8.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Store.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VirtualPetAngelo.Monkey">
+    <Position X="14" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Monkey.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VirtualPetAngelo.Dinossaur">
+    <Position X="18" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Dinossaur.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VirtualPetAngelo.Turtle">
+    <Position X="16" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Turtle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VirtualPetAngelo.VirtualGame">
+    <Position X="4.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAEAAKwgMAAAEAoAAIACAAAAKAABAQEAAIIAADE=</HashCode>
+      <FileName>VirtualGame.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VirtualPetAngelo.MetalTurtle">
+    <Position X="16" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\MetalTurtle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VirtualPetAngelo.Dragon">
+    <Position X="19" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Dragon.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VirtualPetAngelo.Ball">
+    <Position X="6.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Ball.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VirtualPetAngelo.Boomerang">
+    <Position X="8.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Boomerang.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VirtualPetAngelo.Rope">
+    <Position X="10.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Rope.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VirtualPetAngelo.FireMonkey">
+    <Position X="13.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\FireMonkey.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
