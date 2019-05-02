@@ -30,18 +30,25 @@ namespace VirtualPetAngelo
 
             foreach (var item in this.vg.getListOfPets()) {
 
-                listView1.Items.Add(item.GetType().ToString());
-                listView1.Items.Add(item.PetPrice.ToString());
+                listBox1.Items.Add(item.GetType().ToString().Replace("VirtualPetAngelo.", ""));
             }
-            
+
+            foreach (var item in this.vg.getListOfPets())
+            {
+
+                listBox2.Items.Add(item.PetPrice.ToString());
+            }
+
         }
 
         private void btn_SelectPet_Click(object sender, EventArgs e)
         {
-            //string selectedPet = comboBox1.SelectedItem.ToString();
-            //this.vg.choosePet(selectedPet);
-            
-        }
+            string selectedPet = listBox1.SelectedItem.ToString();
+            this.vg.choosePet(selectedPet);
 
+            MainMenu mm = new MainMenu(vg);
+            mm.Show();
+            this.Hide();
+        }
     }
 }

@@ -48,11 +48,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BuyItemForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuyItemForm.Designer.cs">
+      <DependentUpon>BuyItemForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="CreatePlayerName.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="CreatePlayerName.Designer.cs">
       <DependentUpon>CreatePlayerName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainMenu.Designer.cs">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MakeMoneyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MakeMoneyForm.Designer.cs">
+      <DependentUpon>MakeMoneyForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\Ball.cs" />
     <Compile Include="Models\Boomerang.cs" />
@@ -65,6 +83,18 @@
     </Compile>
     <Compile Include="PetMenu.Designer.cs">
       <DependentUpon>PetMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PlayPetForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PlayPetForm.Designer.cs">
+      <DependentUpon>PlayPetForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProfileForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProfileForm.Designer.cs">
+      <DependentUpon>ProfileForm.cs</DependentUpon>
     </Compile>
     <Compile Include="VirtualGame.cs" />
     <Compile Include="Models\Item.cs" />
@@ -82,11 +112,26 @@
     <None Include="ClassDiagram1.cd" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="BuyItemForm.resx">
+      <DependentUpon>BuyItemForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CreatePlayerName.resx">
       <DependentUpon>CreatePlayerName.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MainMenu.resx">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MakeMoneyForm.resx">
+      <DependentUpon>MakeMoneyForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PetMenu.resx">
       <DependentUpon>PetMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlayPetForm.resx">
+      <DependentUpon>PlayPetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProfileForm.resx">
+      <DependentUpon>ProfileForm.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

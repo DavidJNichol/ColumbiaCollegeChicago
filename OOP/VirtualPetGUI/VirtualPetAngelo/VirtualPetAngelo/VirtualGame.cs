@@ -106,6 +106,11 @@ namespace VirtualPetAngelo
             return this.pets;
         }
 
+        public List<Item> getListOfPlayerItems()
+        {
+            return player.PlayerItems;
+        }
+
         public void choosePet(string petSelected)
         {
             bool choosed = true;
@@ -134,7 +139,6 @@ namespace VirtualPetAngelo
                         throw ex;
                     }
                 }               
-
             }
         }
 
@@ -144,23 +148,18 @@ namespace VirtualPetAngelo
             return s;
         }
 
-        public void buyItem()
+        public List<Item> getListItems()
         {
-            Console.Clear();
-            Console.WriteLine($"{player.PlayerName} has ${player.PlayerWallet} in his wallet");
-            Console.WriteLine("Which item do you want to buy ?");
+            return items;
+        }
+
+        public bool buyItem(string chooseItem)
+        {
+            bool goodPurchased = false;
             bool choosed = true;
-
-            foreach (Item item in items)
-            {
-                Console.WriteLine($"{items.IndexOf(item) + 1}.{item.ItemName.ToString().Replace("VirtualPetAngelo.", "")}\t Price: {item.ItemPrice}\t Skill: {item.ItemSkill}");
-            }
-            Console.WriteLine("Exit(0)");
-
             while (choosed)
             {
-
-                string option = Console.ReadLine();
+                string option = chooseItem;
                 if(option == "0")
                 {
                     break;
@@ -168,31 +167,27 @@ namespace VirtualPetAngelo
                 int index = 0;
                 int.TryParse(option, out index);
 
-                if(items[index - 1].ItemPrice > player.PlayerWallet)
+                if(items[index].ItemPrice > player.PlayerWallet)
                 {
-                    
-                    Console.WriteLine("You don't have enough money to buy this item");
-                    Console.WriteLine("Choose another Item");
                     break;
-
                 }
                 else
                 {
                     try
                     {
-                        player.PlayerItems.Add(items[index - 1]);
+                        player.PlayerItems.Add(items[index]);
                         choosed = false;
-                        player.PlayerWallet = player.PlayerWallet - items[index - 1].ItemPrice;
-
+                        player.PlayerWallet = player.PlayerWallet - items[index].ItemPrice;
+                        goodPurchased = true;
                     }
                     catch (Exception ex)
                     {
                         throw ex;
                     }
-
-                    returnGameMenu();
                 }
             }
+
+            return goodPurchased;
         }
 
         public void returnGameMenu()
@@ -227,28 +222,22 @@ namespace VirtualPetAngelo
             returnGameMenu();
         }
 
-        public void playWithPet()
+        public void playWithPet(string playerItem)
         {
-            
-            Console.Clear();
-            Console.WriteLine("Which item do you want to play with ?");
-
-            foreach (Item item in player.PlayerItems)
-            {
-                Console.WriteLine($"{player.PlayerItems.IndexOf(item) + 1}. {item.ItemName}");
-            }
-
-            string option = Console.ReadLine();
+            string option = playerItem;
             int index = 0;
             int.TryParse(option, out index);
 
             Console.WriteLine($"{player.MyPet.ToString().Replace("VirtualPetAngelo.", "")} is playing with the {items[index - 1].ItemName.ToString().Replace("VirtualPetAngelo.", "")}");
 
             player.MyPet.PetSkill += 10;
-            player.PlayerScore += 10;
+            player.PlayerScore += 10;           
+        }
 
-            returnGameMenu();
-            
+        public string playPetMenu()
+        {
+            string s = "Which item do you want to play with ?";
+            return s;
         }
 
         public void evolvePet()
@@ -333,29 +322,42 @@ namespace VirtualPetAngelo
 
         }
 
-        public void makeMoney()
+        public bool makeMoney(string moneyOption)
         {
-            Console.WriteLine("What a smart player...");
-            Console.WriteLine("So do you want to make more money ?");
-            Console.WriteLine("Then tell me which number I'm thinking right now between 1 and 10:");
-
-            string option = Console.ReadLine();
+            string option = moneyOption;
             int number = 0;
             int.TryParse(option, out number);
-            
-            if(number == generateRandomNumber())
-            {
-                Console.WriteLine("Congratulations!!!");
-                Console.WriteLine("You got $10.");
+            bool answerStatus = false;
 
-                player.PlayerWallet += 10;
-                returnGameMenu();
-            }
-            else
+            if (number == generateRandomNumber())
             {
-                Console.WriteLine("Sorry, try next time !");
-                returnGameMenu();
+                answerStatus = true;
+                
+                player.PlayerWallet += 10;
             }
+            return answerStatus;
+        }
+
+        public string makeMoneyRightAnswer()
+        {
+            string s = "Congratulations!!!";
+            s += "You got $10.";
+            return s;
+        }
+
+        public string makeMoneyWrongAnswer()
+        {
+            string s = "Sorry, try next time !";
+            return s;
+        }
+
+        public string makeMoneyMenu()
+        {
+            string s = $"What a smart player...\r";
+            s += $"So do you want to make more money ?\r";
+            s += $"Then tell me which number I'm thinking right now between 1 and 10:";
+
+            return s;
         }
 
         public int generateRandomNumber()
@@ -420,7 +422,7 @@ namespace VirtualPetAngelo
                         }
                         else
                         {
-                            playWithPet();
+                            //playWithPet();
                         }
                         break;
                     case "e":
@@ -457,7 +459,7 @@ namespace VirtualPetAngelo
                         showProfile();
                         break;
                     case "m":
-                        makeMoney();
+                        //makeMoney();
                         break;
                     case "r":
                         GameMainMenu();
@@ -486,7 +488,7 @@ namespace VirtualPetAngelo
                 switch (option)
                 {
                     case "b":
-                        buyItem();
+                        //buyItem();
                         break;
                     case "s":
                         sellItem();
