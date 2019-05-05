@@ -101,6 +101,18 @@ namespace VirtualPetAngelo
             return s;
         }
 
+        public string showPlayerPetSkill()
+        {
+            string s = $"{player.MyPet.PetSkill.ToString()}";
+            return s;
+        }
+
+        public string showPlayerScore()
+        {
+            string s = player.PlayerScore.ToString();
+            return s;
+        }
+
         public List<Pet> getListOfPets()
         {
             return this.pets;
@@ -110,36 +122,42 @@ namespace VirtualPetAngelo
         {
             return player.PlayerItems;
         }
-
-        public void choosePet(string petSelected)
+        
+        public bool choosePet(string petSelected)
         {
-            bool choosed = true;
+            bool goodPurchased = false;
+            int index = 0;
 
-            while (choosed)
+            foreach (var pet in pets)
             {
-                string choose = petSelected;
-                int index = 0;
-                int.TryParse(choose, out index);
 
-                if (pets[index].PetPrice > player.PlayerWallet)
+                if (pet.GetType().ToString().Replace("VirtualPetAngelo.", "") == petSelected)
                 {
-                    showNotEnoughMoneyMessage();
-                    choosed = true;
+                    goodPurchased = true;
+                    index = pets.IndexOf(pet);
+                    break;
                 }
-                else
-                {
-                    try
-                    {
-                        player.MyPet = pets[index];
-                        choosed = false;
-                        player.PlayerWallet = player.PlayerWallet - pets[index].PetPrice;
-                    }
-                    catch (Exception ex)
-                    {
-                        throw ex;
-                    }
-                }               
             }
+
+            if (pets[index].PetPrice > player.PlayerWallet)
+            {
+                goodPurchased = false;
+            }
+            else
+            {
+                try
+                {
+                    player.MyPet = pets[index];
+                    player.PlayerWallet = player.PlayerWallet - pets[index].PetPrice;
+                    goodPurchased = true;
+                }
+                catch (Exception ex)
+                {
+                    throw ex;
+                }
+            }
+
+            return goodPurchased;
         }
 
         private string showNotEnoughMoneyMessage()
@@ -156,34 +174,34 @@ namespace VirtualPetAngelo
         public bool buyItem(string chooseItem)
         {
             bool goodPurchased = false;
-            bool choosed = true;
-            while (choosed)
-            {
-                string option = chooseItem;
-                if(option == "0")
-                {
-                    break;
-                }
-                int index = 0;
-                int.TryParse(option, out index);
+            int index = 0;
 
-                if(items[index].ItemPrice > player.PlayerWallet)
+            foreach (var item in items)
+            {
+                
+                if (item.ItemName == chooseItem)
                 {
+                    goodPurchased = true;
+                    index = items.IndexOf(item);
                     break;
                 }
-                else
+            }
+
+            if(items[index].ItemPrice > player.PlayerWallet)
+            {
+                goodPurchased = false;
+            }
+            else
+            {
+                try
                 {
-                    try
-                    {
-                        player.PlayerItems.Add(items[index]);
-                        choosed = false;
-                        player.PlayerWallet = player.PlayerWallet - items[index].ItemPrice;
-                        goodPurchased = true;
-                    }
-                    catch (Exception ex)
-                    {
-                        throw ex;
-                    }
+                    player.PlayerItems.Add(items[index]);
+                    player.PlayerWallet = player.PlayerWallet - items[index].ItemPrice;
+                    goodPurchased = true;
+                }
+                catch (Exception ex)
+                {
+                    throw ex;
                 }
             }
 
@@ -240,86 +258,66 @@ namespace VirtualPetAngelo
             return s;
         }
 
-        public void evolvePet()
+        public string evolvePetNeedsMessage()
         {
-            Console.WriteLine("**** Evolving you pet ****");
-            Console.WriteLine("For this important reason you going to need: ");
-            Console.WriteLine("Score: 100");
-            Console.WriteLine("Wallet: 5000");
-            Console.WriteLine("Skill: 2000");
-            Console.WriteLine("");
-            Console.WriteLine($"{player.PlayerName} Information:");
-            Console.WriteLine($"Score: {player.PlayerScore}");
-            Console.WriteLine($"Wallet: {player.PlayerWallet}");
-            Console.WriteLine($"Skill: {player.MyPet.PetSkill}");
-            Console.WriteLine("");
+            string s = "For this important reason you going to need: ";
+            s += "Score: 100";
+            s += "Wallet: 5000";
+            s += "Skill: 2000";
 
-            if (player.PlayerScore == 100 && player.PlayerWallet == 5000 && player.MyPet.PetSkill == 2000)
-            {
-                Console.WriteLine("Do you want to Continue");
-                Console.WriteLine("Yes(1)/ No(2)");
-
-                string option = Console.ReadLine();
-                int answer = 0;
-                int.TryParse(option, out answer);
-
-                if(answer == 1)
-                {
-
-                    if(player.MyPet.ToString().Replace("VirtualPetAngelo.", "") == "Monkey")
-                    {
-                        player.MyPet = new FireMonkey();
-                        Console.WriteLine(player.MyPet.ToString().Replace("VirtualPetAngelo.", ""));
-                        returnGameMenu();
-                    }
-                    else if (player.MyPet.ToString().Replace("VirtualPetAngelo.", "") == "Turtle")
-                    {
-                        player.MyPet = new MetalTurtle();
-                        Console.WriteLine(player.MyPet.ToString().Replace("VirtualPetAngelo.", ""));
-                        returnGameMenu();
-                    }
-                    else if(player.MyPet.ToString().Replace("VirtualPetAngelo.", "") == "Dinossaur")
-                    {
-                        player.MyPet = new Dragon();
-                        Console.WriteLine(player.MyPet.ToString().Replace("VirtualPetAngelo.", ""));
-                        returnGameMenu();
-                    }
-
-                }else if(answer == 2)
-                {
-                    Console.WriteLine("See you next time !");
-                    returnGameMenu();
-                }
-
-            }
-            else
-            {
-                Console.WriteLine("You don't have enough resources for this action yet !");
-                returnGameMenu();
-            }
-
+            return s;
         }
 
-        private void sellItem()
+        public bool evolvePet()
         {
-            Console.Clear();
-            Console.WriteLine("Which item do you want to sell from your items ?");
+            bool evolved = false;
+            if (player.PlayerScore == 100 && player.PlayerWallet == 5000 && player.MyPet.PetSkill == 2000)
+            {
+                if(player.MyPet.ToString().Replace("VirtualPetAngelo.", "") == "Monkey")
+                {
+                    player.MyPet = new FireMonkey();
+                    evolved = true;
+                }
+                else if (player.MyPet.ToString().Replace("VirtualPetAngelo.", "") == "Turtle")
+                {
+                    player.MyPet = new MetalTurtle();
+                    evolved = true;
+                }
+                else if(player.MyPet.ToString().Replace("VirtualPetAngelo.", "") == "Dinossaur")
+                {
+                    player.MyPet = new Dragon();
+                    evolved = true;
+                }
+            }
+
+            return evolved;
+        }
+
+        public bool sellItem(string chooseItem)
+        {
+            int index = 0;
+            bool didIt = false;
 
             foreach (Item item in player.PlayerItems)
             {
-                Console.WriteLine($"{player.PlayerItems.IndexOf(item) + 1}. {item.ItemName} ${item.ItemPrice}");
+                if (item.ItemName == chooseItem)
+                {
+                    didIt = true;
+                    index = items.IndexOf(item);
+                    break;
+                }
             }
 
-            string option = Console.ReadLine();
-            int index = 0;
-            int.TryParse(option, out index);
+            player.PlayerWallet += player.PlayerItems[index].ItemPrice;
+            player.PlayerItems.RemoveAt(index);
 
-            Console.WriteLine($"{player.PlayerItems[index -1].ItemName} sold");
+            return didIt;
+        }
 
-            player.PlayerWallet += player.PlayerItems[index - 1].ItemPrice;
-            player.PlayerItems.RemoveAt(index - 1);
-            returnGameMenu();
-
+        public string sellItemMessage()
+        {
+            string s = "Sold Item";
+            return s;
         }
 
         public bool makeMoney(string moneyOption)
@@ -491,7 +489,7 @@ namespace VirtualPetAngelo
                         //buyItem();
                         break;
                     case "s":
-                        sellItem();
+                        //sellItem();
                         break;
                     case "r":
                         GameMainMenu();

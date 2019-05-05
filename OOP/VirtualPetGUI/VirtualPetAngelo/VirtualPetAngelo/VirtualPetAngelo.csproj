@@ -39,6 +39,7 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -48,29 +49,47 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BuyItemForm.cs">
+    <Compile Include="Forms\BuyItemForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="BuyItemForm.Designer.cs">
+    <Compile Include="Forms\BuyItemForm.Designer.cs">
       <DependentUpon>BuyItemForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="CreatePlayerName.cs">
+    <Compile Include="Forms\CreatePlayerName.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CreatePlayerName.Designer.cs">
+    <Compile Include="Forms\CreatePlayerName.Designer.cs">
       <DependentUpon>CreatePlayerName.cs</DependentUpon>
     </Compile>
-    <Compile Include="MainMenu.cs">
+    <Compile Include="Forms\EvolvePetForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MainMenu.Designer.cs">
+    <Compile Include="Forms\EvolvePetForm.Designer.cs">
+      <DependentUpon>EvolvePetForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MainMenu.Designer.cs">
       <DependentUpon>MainMenu.cs</DependentUpon>
     </Compile>
-    <Compile Include="MakeMoneyForm.cs">
+    <Compile Include="Forms\MakeMoneyForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MakeMoneyForm.Designer.cs">
+    <Compile Include="Forms\MakeMoneyForm.Designer.cs">
       <DependentUpon>MakeMoneyForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PetStatusForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PetStatusForm.Designer.cs">
+      <DependentUpon>PetStatusForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SellItemForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SellItemForm.Designer.cs">
+      <DependentUpon>SellItemForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\Ball.cs" />
     <Compile Include="Models\Boomerang.cs" />
@@ -78,22 +97,22 @@
     <Compile Include="Models\Dragon.cs" />
     <Compile Include="Models\FireMonkey.cs" />
     <Compile Include="Models\Rope.cs" />
-    <Compile Include="PetMenu.cs">
+    <Compile Include="Forms\PetMenu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PetMenu.Designer.cs">
+    <Compile Include="Forms\PetMenu.Designer.cs">
       <DependentUpon>PetMenu.cs</DependentUpon>
     </Compile>
-    <Compile Include="PlayPetForm.cs">
+    <Compile Include="Forms\PlayPetForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PlayPetForm.Designer.cs">
+    <Compile Include="Forms\PlayPetForm.Designer.cs">
       <DependentUpon>PlayPetForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="ProfileForm.cs">
+    <Compile Include="Forms\ProfileForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ProfileForm.Designer.cs">
+    <Compile Include="Forms\ProfileForm.Designer.cs">
       <DependentUpon>ProfileForm.cs</DependentUpon>
     </Compile>
     <Compile Include="VirtualGame.cs" />
@@ -112,26 +131,35 @@
     <None Include="ClassDiagram1.cd" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="BuyItemForm.resx">
+    <EmbeddedResource Include="Forms\BuyItemForm.resx">
       <DependentUpon>BuyItemForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CreatePlayerName.resx">
+    <EmbeddedResource Include="Forms\CreatePlayerName.resx">
       <DependentUpon>CreatePlayerName.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MainMenu.resx">
+    <EmbeddedResource Include="Forms\EvolvePetForm.resx">
+      <DependentUpon>EvolvePetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MainMenu.resx">
       <DependentUpon>MainMenu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MakeMoneyForm.resx">
+    <EmbeddedResource Include="Forms\MakeMoneyForm.resx">
       <DependentUpon>MakeMoneyForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PetMenu.resx">
+    <EmbeddedResource Include="Forms\PetMenu.resx">
       <DependentUpon>PetMenu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PlayPetForm.resx">
+    <EmbeddedResource Include="Forms\PetStatusForm.resx">
+      <DependentUpon>PetStatusForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PlayPetForm.resx">
       <DependentUpon>PlayPetForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ProfileForm.resx">
+    <EmbeddedResource Include="Forms\ProfileForm.resx">
       <DependentUpon>ProfileForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SellItemForm.resx">
+      <DependentUpon>SellItemForm.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
