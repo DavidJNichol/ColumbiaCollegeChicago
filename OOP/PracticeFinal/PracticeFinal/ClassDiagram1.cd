@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="PracticeFinal.Topping">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAEAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Topping.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PracticeFinal.Icecream">
+    <Position X="3" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAQAEAEAAAAAAEAAAABAAAAAAAAIAAAAA=</HashCode>
+      <FileName>Models\Icecream.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PracticeFinal.IceCreamWaffleCone">
+    <Position X="1" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\IceCreamWaffleCone.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PracticeFinal.Scoop">
+    <Position X="5.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Scoop.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PracticeFinal.IceCreamSugarCone">
+    <Position X="2.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\IceCreamSugarCone.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PracticeFinal.IceCreamSundae">
+    <Position X="4.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\IceCreamSundae.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="PracticeFinal.Flavor">
+    <Position X="7.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAICAAAgAAgAAAAAAAAAAAAAAAAARAAACAAAAAgAgAA=</HashCode>
+      <FileName>Models\Flavor.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,7 @@
+C:\Users\TEMP\Desktop\New folder\PracticeFinal\PracticeFinal\bin\Debug\PracticeFinal.exe.config
+C:\Users\TEMP\Desktop\New folder\PracticeFinal\PracticeFinal\bin\Debug\PracticeFinal.exe
+C:\Users\TEMP\Desktop\New folder\PracticeFinal\PracticeFinal\bin\Debug\PracticeFinal.pdb
+C:\Users\TEMP\Desktop\New folder\PracticeFinal\PracticeFinal\obj\Debug\PracticeFinal.csprojAssemblyReference.cache
+C:\Users\TEMP\Desktop\New folder\PracticeFinal\PracticeFinal\obj\Debug\PracticeFinal.csproj.CoreCompileInputs.cache
+C:\Users\TEMP\Desktop\New folder\PracticeFinal\PracticeFinal\obj\Debug\PracticeFinal.exe
+C:\Users\TEMP\Desktop\New folder\PracticeFinal\PracticeFinal\obj\Debug\PracticeFinal.pdb
