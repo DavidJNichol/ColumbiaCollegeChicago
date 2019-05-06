@@ -9,12 +9,15 @@ public class ManageBehaviorAI : MonoBehaviour
     {
         Patrol,
         Chase,
-        Sound
+        Sound,
+        Touch
     }
 
     public States state;
     public NavMeshAgent agent;
     public GameObject player;
+    public GameObject soundCube;
+    public AudioSource ad;
 
     //Chase variables
     public float chaseSpeed;
@@ -31,6 +34,7 @@ public class ManageBehaviorAI : MonoBehaviour
     void Start()
     {
         Patrolling();
+        this.soundCube.transform.position = generateRandomPosition();
     }
 
     // Update is called once per frame
@@ -42,10 +46,19 @@ public class ManageBehaviorAI : MonoBehaviour
             switchState(States.Patrol);
         }
 
-        if((player.transform.position - agent.transform.position).magnitude < 15.0f)
+        if((player.transform.position - agent.transform.position).magnitude < 10.0f)
         {
-            Debug.Log("Chase");
             switchState(States.Chase);
+        }
+
+        if ((player.transform.position - soundCube.transform.position).magnitude < 2.0f)
+        {
+            switchState(States.Sound);
+        }
+
+        if((player.transform.position - agent.transform.position).magnitude < 1.0f)
+        {
+            switchState(States.Touch);
         }
     }
 
@@ -64,6 +77,11 @@ public class ManageBehaviorAI : MonoBehaviour
                 break;
             case States.Sound:
                 Debug.Log("Sound");
+                Sounding();
+                break;
+            case States.Touch:
+                Debug.Log("Touch");
+                Touching();
                 break;
         }
     }
@@ -79,23 +97,32 @@ public class ManageBehaviorAI : MonoBehaviour
             Debug.Log("Arrived");
             return;
         }
+
+        
     }
+
     public Vector3 generateRandomPosition()
     {
-        Vector3 position = new Vector3(Random.Range(-24.0f, 24.0f), 0, Random.Range(-24.0f, 24.0f));
+        Vector3 position = new Vector3(Random.Range(-24.0f, 24.0f), 3, Random.Range(-24.0f, 24.0f));
         return position;
-        }
+    }
 
     //Chase State Workflow
     public void Chasing()
     {
         this.agent.destination = this.player.transform.position;
         this.agent.GetComponent<Renderer>().material.color= new Color(255, 0, 0, 255);
-
-        if((player.transform.position - agent.transform.position).magnitude > 15.0f)
-        {
-            switchState(States.Patrol);
-        }
     }
 
+    public void Sounding()
+    {
+        this.soundCube.transform.position = generateRandomPosition();
+        ad.Play();
+        switchState(States.Chase);        
+    }
+
+    public void Touching()
+    {
+        Destroy(player);
+    }
 }
