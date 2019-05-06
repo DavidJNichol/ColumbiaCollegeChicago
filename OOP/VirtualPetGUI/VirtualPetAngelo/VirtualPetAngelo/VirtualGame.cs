@@ -11,8 +11,6 @@ namespace VirtualPetAngelo
 
         List<Item> items;
         List<Pet> pets;
-        
-        
 
         public VirtualGame()
         {
@@ -53,15 +51,6 @@ namespace VirtualPetAngelo
                 new Rope{ ItemName = "Rope", ItemPrice = 200, ItemSkill = 5  }
             };
         }
-
-        //public void Start()
-        //{
-        //    Console.WriteLine(showFirstBanner());
-        //    createPlayer();
-        //    choosePet();
-        //    GameMainMenu();
-            
-        //}
 
         public string showFirstBanner()
         {
@@ -208,46 +197,8 @@ namespace VirtualPetAngelo
             return goodPurchased;
         }
 
-        public void returnGameMenu()
-        {            
-            Console.Clear();
-            GameMainMenu();
-        }
-
-        public void showProfile()
+        public void playWithPet()
         {
-            Console.Clear();
-            Console.WriteLine($"{player.PlayerName} Profile");
-            Console.WriteLine($"My pet is a {player.MyPet.ToString().Replace("VirtualPetAngelo.", "")}");
-            Console.WriteLine($"Wallet: {player.PlayerWallet}");
-            Console.WriteLine($"Score: {player.PlayerScore}");            
-            Console.WriteLine("My Items:");
-            foreach(Item item in player.PlayerItems)
-            {
-                Console.WriteLine(item.ItemName.ToString().Replace("VirtualPetAngelo.", "\t"));
-            }
-
-            returnGameMenu();
-        }
-
-        public void showPetStatus()
-        {
-            Console.Clear();
-            Console.WriteLine($"{player.MyPet.ToString().Replace("VirtualPetAngelo.", "")} Status");
-            Console.WriteLine($"Skill: {player.MyPet.PetSkill}");
-
-            
-            returnGameMenu();
-        }
-
-        public void playWithPet(string playerItem)
-        {
-            string option = playerItem;
-            int index = 0;
-            int.TryParse(option, out index);
-
-            Console.WriteLine($"{player.MyPet.ToString().Replace("VirtualPetAngelo.", "")} is playing with the {items[index - 1].ItemName.ToString().Replace("VirtualPetAngelo.", "")}");
-
             player.MyPet.PetSkill += 10;
             player.PlayerScore += 10;           
         }
@@ -364,143 +315,5 @@ namespace VirtualPetAngelo
             int number = rnd.Next(1, 10);
             return number;
         }
-
-        public void GameMainMenu()
-        {
-            Console.Clear();
-
-            Console.WriteLine("Your journey starts know...");
-            Console.WriteLine("What do you want to do ?");
-            Console.WriteLine("- Player(p)");
-            Console.WriteLine("- Pet(t)");
-            Console.WriteLine("- Store(s)");
-            Console.WriteLine("0. Exit");
-            bool isPlaying = true;
-
-            while (isPlaying)
-            {
-                string option = Console.ReadLine();
-                switch(option)
-                {
-                    case "p":
-                        GamePlayerMenu();
-                        break;
-                    case "t":
-                        GamePetMenu();
-                        break;
-                    case "s":
-                        GameStoreMenu();
-                        break;
-                    default:
-                        isPlaying = false;
-                        break;
-                }
-            }
-        }
-
-        public void GamePetMenu()
-        {
-            Console.Clear();
-            Console.WriteLine("What do you want to do ?");
-            Console.WriteLine("- Play with your Pet(t)");
-            Console.WriteLine("- Evolve your Pet(e)");
-            Console.WriteLine("- Pet Status(s)");
-            Console.WriteLine("- Return(r)");
-            bool isPlaying = true;
-
-            while (isPlaying)
-            {
-                string option = Console.ReadLine();
-                switch (option)
-                {
-                    case "t":
-                        if (player.PlayerItems.Count <= 0)
-                        {
-                            Console.WriteLine("You dont have any items in your list.");
-                        }
-                        else
-                        {
-                            //playWithPet();
-                        }
-                        break;
-                    case "e":
-                        evolvePet();
-                        break;
-                    case "s":
-                        showPetStatus();
-                        break;
-                    case "r":
-                        GameMainMenu();
-                        break;
-                    default:
-                        isPlaying = false;
-                        break;
-                }
-            }
-        }
-
-        public void GamePlayerMenu()
-        {
-            Console.Clear();
-            Console.WriteLine("What do you want to do ?");
-            Console.WriteLine("- Your Profile(p)");
-            Console.WriteLine("- Make money(m)");
-            Console.WriteLine("- Return(r)");
-            bool isPlaying = true;
-
-            while (isPlaying)
-            {
-                string option = Console.ReadLine();
-                switch (option)
-                {
-                    case "p":
-                        showProfile();
-                        break;
-                    case "m":
-                        //makeMoney();
-                        break;
-                    case "r":
-                        GameMainMenu();
-                        break;
-                    default:
-                        isPlaying = false;
-                        break;
-                }
-            }
-        }
-
-        public void GameStoreMenu()
-        {
-            Console.Clear();
-
-            Console.WriteLine("Welcome to the Wallmart Pet");
-            Console.WriteLine("What do you want to do ?");
-            Console.WriteLine("- Buy items(b)");
-            Console.WriteLine("- Sell items(s)");
-            Console.WriteLine("- Return(r)");
-            bool isPlaying = true;
-
-            while (isPlaying)
-            {
-                string option = Console.ReadLine();
-                switch (option)
-                {
-                    case "b":
-                        //buyItem();
-                        break;
-                    case "s":
-                        //sellItem();
-                        break;
-                    case "r":
-                        GameMainMenu();
-                        break;
-                    default:
-                        isPlaying = false;
-                        break;
-                }
-            }
-        }
-
-
     }
 }

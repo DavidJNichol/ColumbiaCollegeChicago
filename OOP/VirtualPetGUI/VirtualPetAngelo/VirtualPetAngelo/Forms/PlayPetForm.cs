@@ -37,10 +37,11 @@ namespace VirtualPetAngelo
         {
             if(list_PlayerItems.SelectedItem == null)
             {
-                this.Hide();
+                txt_MessagePlay.Text = "Select item before playing !";
             }
             else
             {
+                this.vg.playWithPet();
                 txt_MessagePlay.Text = $"{this.vg.showPlayerPet().ToString().Replace("VirtualPetAngelo.", "")} is playing with {list_PlayerItems.SelectedItem.ToString()}";
             }            
         }
