@@ -87,6 +87,18 @@ namespace Algorithms
             }
         }
 
+        public void saveCSVFile(List<String> guidList)
+        {
+            using (StreamWriter sw = File.CreateText(Path2))
+            {
+                for (int i = 0; i < intList.Count; i++)
+                {
+                    var line = String.Format("{0}",guidList[i]);
+                    sw.WriteLine(line);
+                }
+            }
+        }
+
         public void saveCSVFile(List<String> intList, List<String> guidList, List<String> dbList)
         {
             using (StreamWriter sw = File.CreateText(Path2))

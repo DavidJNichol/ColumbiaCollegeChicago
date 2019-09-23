@@ -18,9 +18,8 @@ namespace Algorithms
             d.saveCSVFile();
 
             d.loadCSVFile();
-            //s.sortGuidList(d.getNewListDouble()); // Sort Guid List
-            //s.sortGuidList(d.getNewListGuid()); // Sort Double List
 
+            d.saveCSVFile(s.sortGuidList(d.getNewListGuid()));
             //d.saveCSVFile(d.getNewListInt(), d.getNewListGuid(), d.getNewListDouble()); //First Sort Save file
 
             Console.ReadLine();
