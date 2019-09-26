@@ -10,6 +10,9 @@ namespace Algorithms
     {
         private const string Path  = "C:\\Users\\angelo.demello\\Desktop\\Algorithms\\metaData.csv";
         private const string Path2 = "C:\\Users\\angelo.demello\\Desktop\\Algorithms\\metaData2.csv";
+        private const string Path3 = "C:\\Users\\angelo.demello\\Desktop\\Algorithms\\metaData3.csv";
+        private const string Path4 = "C:\\Users\\angelo.demello\\Desktop\\Algorithms\\SortedDoubles.csv";
+        private const string Path5 = "C:\\Users\\angelo.demello\\Desktop\\Algorithms\\SortedGUID.csv";
         //Save Lists
         List<string> intList;
         List<string> guidList;
@@ -75,6 +78,48 @@ namespace Algorithms
             }
         }
 
+        public void saveNewCSVGUIDFile()
+        {
+            using (StreamWriter sw = File.CreateText(Path2))
+            {
+                foreach (var item in newListGuid)
+                {
+                    sw.WriteLine(string.Join(",", item));
+                }
+            }
+        }
+        public void saveNewCSVDoubleFile()
+        {
+            using (StreamWriter sw = File.CreateText(Path3))
+            {
+                foreach (var item in newListDouble)
+                {
+                    sw.WriteLine(string.Join(",", item));
+                }
+            }
+        }
+
+        public void saveNewSortedCSVDoubleFile(List<string> newDoubleList)
+        {
+            using (StreamWriter sw = File.CreateText(Path4))
+            {
+                foreach (var item in newDoubleList)
+                {
+                    sw.WriteLine(string.Join(",", item));
+                }
+            }
+        }
+        public void saveNewSortedCSVGUIDFile(List<string> newGuidList)
+        {
+            using (StreamWriter sw = File.CreateText(Path5))
+            {
+                foreach (var item in newGuidList)
+                {
+                    sw.WriteLine(string.Join(",", item));
+                }
+            }
+        }
+
         public void saveCSVFile()
         {
             using (StreamWriter sw = File.CreateText(Path))
@@ -82,34 +127,10 @@ namespace Algorithms
                 for (int i = 0; i < intList.Count; i++)
                 {
                     var line = String.Format("{0},{1},{2}", intList[i], guidList[i], dbList[i]);
-                    sw.WriteLine(line); 
-                }
-            }
-        }
-
-        public void saveCSVFile(List<String> guidList)
-        {
-            using (StreamWriter sw = File.CreateText(Path2))
-            {
-                for (int i = 0; i < intList.Count; i++)
-                {
-                    var line = String.Format("{0}",guidList[i]);
                     sw.WriteLine(line);
                 }
             }
-        }
-
-        public void saveCSVFile(List<String> intList, List<String> guidList, List<String> dbList)
-        {
-            using (StreamWriter sw = File.CreateText(Path2))
-            {
-                for (int i = 0; i < intList.Count; i++)
-                {
-                    var line = String.Format("{0},{1},{2}", intList[i], guidList[i], dbList[i]);
-                    sw.WriteLine(line);
-                }
-            }
-        } 
+        }          
 
         public void loadCSVFile()
         {
